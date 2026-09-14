@@ -7,7 +7,7 @@ const { C, FONT_T, WIN, CIX, CIW, Icon, Flip, kf, Sidebar, TopBar, FilmRoot, Cam
 
 const CAPTIONS = [
   [6.6, 13.0, 'One profile: placements, dates and status — the whole story.'],
-  [14.2, 19.2, 'Switch someone to 80% less-than-full-time…'],
+  [14.2, 19.2, 'Add a dated 80% spell — less-than-full-time from August…'],
   [21.8, 28.2, '…and the certification date recalculates itself.'],
   [30.2, 34.6, 'Now record parental leave — nine months from November.'],
   [39.6, 47.2, 'Every later stage — and the CCT — shifts by the pause.'],
@@ -130,15 +130,17 @@ function LtftCard({ t }) {
   const press = t >= 20 && t < 20.3;
   const cct = cctState(t);
   const w = Math.round(CIW * 0.48);
+  // A dated working-pattern row (from / WTE), as the product's spells editor shows it (2026-09-14).
+  const rowS = (on, pr) => ({ display: 'flex', alignItems: 'center', gap: 14, height: 36, padding: '0 12px', borderRadius: 8, border: `1.5px solid ${on ? C.teal : '#C7D2DF'}`, background: on ? C.tealFill : '#fff', fontSize: 13.5, transform: pr ? 'scale(0.98)' : 'none' });
   const chipS = (on, pr) => ({ width: 112, height: 44, borderRadius: 8, border: `1.5px solid ${on ? C.teal : '#C7D2DF'}`, background: on ? C.tealFill : '#fff', color: on ? C.teal : C.inkSoft, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT_T, fontWeight: 700, fontSize: 16, transform: pr ? 'scale(0.93)' : 'none' });
   return (
     <div style={{ position: 'absolute', left: CIX - WIN.x, top: 532, width: w, height: 240, background: '#fff', border: `1px solid ${C.line}`, borderRadius: 8, padding: '20px 24px' }}>
       <div style={{ fontFamily: FONT_T, fontWeight: 700, fontSize: 18, color: C.ink }}>LTFT &amp; CCT</div>
       <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 3 }}>working pattern · whole working months</div>
-      <div style={{ display: 'flex', gap: 12, marginTop: 16 }}>
-        <div style={chipS(!sel80)}>100%</div>
-        <div style={chipS(sel80, press)}>80%</div>
-        <div style={chipS(false)}>60%</div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 14 }}>
+        <div style={rowS(false)}><span style={{ color: C.inkSoft }}>From 6 Aug 2025</span><span style={{ fontFamily: FONT_T, fontWeight: 700 }}>100%</span><span style={{ color: C.inkSoft, fontSize: 12 }}>full time</span></div>
+        <div style={{ ...rowS(sel80, press), opacity: sel80 ? 1 : 0.35 }}><span style={{ color: C.inkSoft }}>From 5 Aug 2026</span><span style={{ fontFamily: FONT_T, fontWeight: 700, color: C.teal }}>80%</span><span style={{ color: C.teal, fontSize: 12 }}>LTFT</span></div>
+        <div style={{ alignSelf: 'flex-start', marginTop: 2, border: `1px solid ${C.navy}`, borderRadius: 8, padding: '6px 12px', fontSize: 12.5, fontWeight: 700, color: C.navy }}>Edit LTFT status</div>
       </div>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, marginTop: 20, borderTop: `1px solid ${C.line}`, paddingTop: 16 }}>
         <span style={{ fontSize: 13, fontWeight: 600, color: C.inkSoft, textTransform: 'uppercase', letterSpacing: '.03em' }}>CCT</span>

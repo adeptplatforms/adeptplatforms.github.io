@@ -23,7 +23,8 @@ const SB_W = 248, TB_H = 64, PAD = 28;
 const CX0 = WIN.x + SB_W;                 // content left edge (358)
 const CIX = CX0 + PAD;                    // content inner x (386)
 const CIW = WIN.x + WIN.w - PAD - CIX;    // content inner width (1396)
-const CARD_W = (CIW - 3 * 20) / 4;        // 334
+const CARD_W = (CIW - 3 * 20) / 4;        // 334 (trust cards, four across)
+const METRIC_W = (CIW - 4 * 20) / 5;      // five live numbers across (2026-09-14)
 const METRIC_Y = WIN.y + TB_H + PAD;      // 156
 const METRIC_H = 118;
 const TRUST_HEAD_Y = METRIC_Y + METRIC_H + 34;
@@ -34,13 +35,14 @@ const ARCP_Y = ARCP_HEAD_Y + 46;
 const ARCP_H = 148;
 const ARCP_W = (CIW - 2 * 24) / 3;
 const SEL = { prevX: 1557, labelX: 1661, nextX: 1765, y: WIN.y + TB_H / 2 }; // topbar right
-const metricCX = (i) => CIX + i * (CARD_W + 20) + CARD_W / 2;
+const metricCX = (i) => CIX + i * (METRIC_W + 20) + METRIC_W / 2;
 const trustXY = (i) => ({ x: CIX + (i % 4) * (CARD_W + 20), y: TRUST_Y + Math.floor(i / 4) * (TRUST_H + 20) });
 
 // ── Data ─────────────────────────────────────────────────────────────────────
 const METRICS = [
   { label: 'Total trainees', sub: 'in this rotation period', aug: '190', feb: '190' },
   { label: 'Unallocated', sub: 'need a placement this period', aug: '12', feb: '27', accent: C.amber },
+  { label: 'CCTs this period', sub: 'complete training this period', aug: '3', feb: '5', accent: C.teal },
   { label: 'LTFT', sub: 'of the cohort train part-time', aug: '18%', feb: '17%' },
   { label: 'Total WTE', sub: 'whole-time equivalents', aug: '176.4', feb: '175.8' },
 ];
@@ -78,7 +80,7 @@ const CLICKS = [18.2, 23.5, 35.8];
 const CAPTIONS = [
   [6.8, 13.4, 'Every trainee, trust and date — one dashboard.'],
   [15.0, 25.8, 'Pick a rotation period — the whole page follows.'],
-  [28.0, 34.4, 'Live numbers: trainees, gaps, LTFT and WTE.'],
+  [28.0, 34.4, 'Five live numbers: trainees, gaps, CCTs, LTFT and WTE.'],
   [38.2, 45.8, 'Unallocated → the trainees who still need a placement.'],
   [48.6, 54.9, 'Live capacity for every hospital trust.'],
   [55.6, 59.4, 'Over capacity flags itself.'],
@@ -220,9 +222,9 @@ function PeriodSelector({ period, pressNext, pressPrev }) {
 
 // ── Dashboard screen ─────────────────────────────────────────────────────────
 function MetricCard({ i, m, period, hl, hover, press }) {
-  const x = CIX - WIN.x + i * (CARD_W + 20), y = METRIC_Y - WIN.y;
+  const x = CIX - WIN.x + i * (METRIC_W + 20), y = METRIC_Y - WIN.y;
   return (
-    <div style={{ position: 'absolute', left: x, top: y, width: CARD_W, height: METRIC_H, background: '#fff', border: `1px solid ${C.line}`, borderRadius: 8, padding: '16px 20px', boxShadow: hl > 0.02 ? `0 0 0 ${2.5 * hl}px rgba(30,58,95,${0.55 * hl})` : (hover ? '0 8px 22px rgba(22,31,46,0.10)' : '0 1px 2px rgba(22,31,46,0.04)'), transform: `translateY(${hover ? -3 : 0}px) scale(${press ? 0.975 : 1})` }}>
+    <div style={{ position: 'absolute', left: x, top: y, width: METRIC_W, height: METRIC_H, background: '#fff', border: `1px solid ${C.line}`, borderRadius: 8, padding: '16px 20px', boxShadow: hl > 0.02 ? `0 0 0 ${2.5 * hl}px rgba(30,58,95,${0.55 * hl})` : (hover ? '0 8px 22px rgba(22,31,46,0.10)' : '0 1px 2px rgba(22,31,46,0.04)'), transform: `translateY(${hover ? -3 : 0}px) scale(${press ? 0.975 : 1})` }}>
       <div style={{ fontSize: 13, fontWeight: 600, color: C.inkSoft, letterSpacing: '.02em', textTransform: 'uppercase' }}>{m.label}</div>
       <Flip from={m[period.from]} to={m[period.to]} p={period.p} style={{ fontFamily: FONT_T, fontWeight: 800, fontSize: 38, color: m.accent || C.navy, marginTop: 8, lineHeight: 1 }} />
       <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 7 }}>{m.sub}</div>

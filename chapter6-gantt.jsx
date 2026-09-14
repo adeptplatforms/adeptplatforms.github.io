@@ -59,7 +59,7 @@ function GanttScreen({ t }) {
   const X = (yr) => GX + (yr - Y0) * PX;
   const filterOn = t >= 24.8;
   const fp = Easing.easeOutCubic(clamp((t - 24.8) / 0.6, 0, 1));
-  const visible = (r) => !filterOn || r.g.startsWith('ST');
+  const visible = (r) => !filterOn || !!r.gap; // Status → Unallocated: the rows with a gap
   const pressExp = t >= 41.6 && t < 41.9;
   const exported = t >= 42.2;
   const ep = Easing.easeOutCubic(clamp((t - 42.2) / 0.6, 0, 1));
@@ -78,12 +78,12 @@ function GanttScreen({ t }) {
         </div>
       } />
       <div style={{ position: 'absolute', left: CIX - WIN.x, top: 90, display: 'flex', gap: 10, alignItems: 'center' }}>
-        <div style={{ fontSize: 12.5, fontWeight: 700, color: C.inkSoft, textTransform: 'uppercase', letterSpacing: '.04em', marginRight: 6 }}>Filters</div>
-        {['All grades', 'ST only', 'Paused', 'Unallocated'].map((f, i) => {
-          const on = i === 1 && filterOn;
-          return <div key={f} style={{ border: `1.5px solid ${on ? C.navy : C.line}`, background: on ? C.navy : '#fff', color: on ? '#fff' : C.inkSoft, borderRadius: 999, padding: '8px 18px', fontSize: 13.5, fontWeight: 700, transform: i === 1 && t >= 24.8 && t < 25.1 ? 'scale(0.93)' : 'none' }}>{f}</div>;
+        <div style={{ fontSize: 12.5, fontWeight: 700, color: C.inkSoft, marginRight: 6 }}>Grade</div>
+        {['All', 'ST4', 'ST5', 'ST6', 'ST7'].map((f, i) => {
+          const on = i === 0;
+          return <div key={f} style={{ border: `1.5px solid ${on ? C.navy : C.line}`, background: on ? C.navy : '#fff', color: on ? '#fff' : C.inkSoft, borderRadius: 999, padding: '8px 18px', fontSize: 13.5, fontWeight: 700 }}>{f}</div>;
         })}
-        <Flip from="190 trainees" to={filterOn ? '104 trainees' : '190 trainees'} p={fp} style={{ marginLeft: 10, fontSize: 13.5, fontWeight: 600, color: C.inkSoft }} />
+        <div style={{ fontSize: 12.5, fontWeight: 700, color: C.inkSoft, marginLeft: 16, marginRight: 6 }}>Status</div>{['All', 'Active', 'Paused', 'Unallocated'].map((f, i) => { const on = (i === 0 && !filterOn) || (i === 3 && filterOn); return <div key={f} style={{ border: `1.5px solid ${on ? C.navy : C.line}`, background: on ? C.navy : '#fff', color: on ? '#fff' : C.inkSoft, borderRadius: 999, padding: '8px 18px', fontSize: 13.5, fontWeight: 700, transform: i === 3 && t >= 24.8 && t < 25.1 ? 'scale(0.93)' : 'none' }}>{f}</div>; })}<Flip from="190 trainees" to={filterOn ? '12 trainees' : '190 trainees'} p={fp} style={{ marginLeft: 10, fontSize: 13.5, fontWeight: 600, color: C.inkSoft }} />
       </div>
       <div style={{ position: 'absolute', left: CIX - WIN.x, top: 148, width: CIW, bottom: 30, background: '#fff', border: `1px solid ${C.line}`, borderRadius: 8, padding: '16px 20px' }}>
         <div style={{ position: 'relative', height: 24 }}>

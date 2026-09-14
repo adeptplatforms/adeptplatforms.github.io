@@ -67,11 +67,7 @@ function OnboardScreen({ t }) {
   return (
     <div style={{ position: 'absolute', inset: 0 }}>
       <Sidebar active="Invitations" />
-      <TopBar title="Invitations" right={
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, border: `1px solid ${C.line}`, borderRadius: 8, padding: '9px 16px', fontSize: 13.5, fontWeight: 600, color: C.navy, background: '#fff' }}><Icon name="download" size={14} color={C.navy} />Export cohort (.xlsx)</div>
-        </div>
-      } />
+      <TopBar title="Invitations" />
       <div style={{ position: 'absolute', left: CIX - WIN.x, top: 96, width: 420 }}>
         <div style={{ fontFamily: FONT_T, fontWeight: 700, fontSize: 19, color: C.ink }}>Import a cohort</div>
         <div style={{ fontSize: 13, color: C.inkSoft, marginTop: 4, lineHeight: 1.5 }}>Excel in → draft invitations out. Nothing sends until you say so.</div>
