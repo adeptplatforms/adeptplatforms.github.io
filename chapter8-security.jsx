@@ -45,7 +45,7 @@ function SecurityScreen({ t }) {
   const colW = (CIW - 24) / 2;
   return (
     <div style={{ position: 'absolute', inset: 0 }}>
-      <Sidebar active="Help & Support" />
+      <Sidebar active="Help & support" />
       <TopBar title="Security & Governance" right={
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: C.tealFill, borderRadius: 999, padding: '7px 16px' }}>
           <Icon name="shield" size={15} color={C.teal} />

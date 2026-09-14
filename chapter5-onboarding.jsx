@@ -108,9 +108,8 @@ function OnboardScreen({ t }) {
             <Flip from="Waiting for an import…" to={parsed ? '190 drafts · grouped by trust · 0 sent' : 'Waiting for an import…'} p={parseP} style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 3 }} />
           </div>
           <div style={{ marginLeft: 'auto', display: 'flex', gap: 10 }}>
-            <div style={{ border: `1px solid ${C.line}`, borderRadius: 8, padding: '10px 18px', fontSize: 13.5, fontWeight: 600, color: C.inkSoft }}>Review all</div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: parsed ? C.navy : '#8D9AAB', color: '#fff', fontFamily: FONT_T, fontWeight: 700, fontSize: 14.5, padding: '10px 22px', borderRadius: 8, transform: pressSend ? 'scale(0.95)' : 'none' }}>
-              <Icon name="mail" size={15} color="#fff" />{sent ? 'Sent ✓' : 'Send all (190)'}
+              <Icon name="mail" size={15} color="#fff" />{sent ? 'Sent ✓' : 'Send all'}
             </div>
           </div>
         </div>

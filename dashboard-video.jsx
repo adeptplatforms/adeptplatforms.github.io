@@ -39,10 +39,10 @@ const trustXY = (i) => ({ x: CIX + (i % 4) * (CARD_W + 20), y: TRUST_Y + Math.fl
 
 // ── Data ─────────────────────────────────────────────────────────────────────
 const METRICS = [
-  { label: 'Total trainees', sub: 'in programme', aug: '190', feb: '190' },
-  { label: 'Unallocated', sub: 'need a placement', aug: '12', feb: '27', accent: C.amber },
-  { label: 'LTFT', sub: 'less than full time', aug: '18%', feb: '17%' },
-  { label: 'Total WTE', sub: 'whole-time equivalent', aug: '176.4', feb: '175.8' },
+  { label: 'Total trainees', sub: 'in this rotation period', aug: '190', feb: '190' },
+  { label: 'Unallocated', sub: 'need a placement this period', aug: '12', feb: '27', accent: C.amber },
+  { label: 'LTFT', sub: 'of the cohort train part-time', aug: '18%', feb: '17%' },
+  { label: 'Total WTE', sub: 'whole-time equivalents', aug: '176.4', feb: '175.8' },
 ];
 const TRUSTS = [
   { name: 'Caldermere General', cap: 32, aug: 30, feb: 28 },
@@ -64,9 +64,9 @@ const UNALLOC = [
   ['T. Whitfield', 'ST7'], ['E. Brennan', 'CT1'], ['P. Iqbal', 'ST5'], ['D. Marsh', 'CT3'],
 ];
 const NAV = [
-  ['grid', 'Dashboard', true], ['tasks', 'Outstanding Tasks'], ['people', 'Trainees'],
-  ['building', 'Hospital Trusts'], ['clipboard', 'ARCPs'], ['calendar', 'Drop-in Sessions'],
-  ['chart', 'Summaries'], ['mail', 'Invitations'], ['help', 'Help & Support'],
+  ['grid', 'Dashboard', true], ['people', 'Trainees'], ['building', 'Hospital trusts'],
+  ['tasks', 'Tasks'], ['clipboard', 'ARCPs'], ['calendar', 'Meetings'],
+  ['chart', 'Summaries'], ['mail', 'Invitations'], ['help', 'Help & support'],
 ];
 
 // ── Timeline scripts ─────────────────────────────────────────────────────────
@@ -78,7 +78,7 @@ const CLICKS = [18.2, 23.5, 35.8];
 const CAPTIONS = [
   [6.8, 13.4, 'Every trainee, trust and date — one dashboard.'],
   [15.0, 25.8, 'Pick a rotation period — the whole page follows.'],
-  [28.0, 34.4, 'Four live numbers: trainees, gaps, LTFT and WTE.'],
+  [28.0, 34.4, 'Live numbers: trainees, gaps, LTFT and WTE.'],
   [38.2, 45.8, 'Unallocated → the trainees who still need a placement.'],
   [48.6, 54.9, 'Live capacity for every hospital trust.'],
   [55.6, 59.4, 'Over capacity flags itself.'],
@@ -190,7 +190,7 @@ function Sidebar() {
       ))}
       <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'center', gap: 10, padding: '12px 10px 0', borderTop: `1px solid ${C.line}` }}>
         <div style={{ width: 34, height: 34, borderRadius: 17, background: C.tealFill, color: C.teal, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 13, fontWeight: 700 }}>EM</div>
-        <div><div style={{ fontSize: 13.5, fontWeight: 600, color: C.ink }}>Dr E. Marsh</div><div style={{ fontSize: 12, color: C.inkSoft }}>Programme Director</div></div>
+        <div><div style={{ fontSize: 13.5, fontWeight: 600, color: C.ink }}>Dr E. Marsh</div><div style={{ fontSize: 12, color: C.inkSoft }}>TPD</div></div>
       </div>
     </div>
   );
@@ -292,7 +292,7 @@ function DashboardScreen({ t, period }) {
       {METRICS.map((m, i) => <MetricCard key={m.label} i={i} m={m} period={period} hl={hlFor(i)} hover={i === 1 && hoverUn} press={i === 1 && pressUn} />)}
       <SectionHead y={TRUST_HEAD_Y} text="Hospital trusts" right={`capacity for ${period.label}`} />
       {TRUSTS.map((tr, i) => <TrustCard key={tr.name} i={i} tr={tr} period={period} redPulse={redPulse} />)}
-      <SectionHead y={ARCP_HEAD_Y} text="Upcoming ARCPs" right="next three panel dates" />
+      <SectionHead y={ARCP_HEAD_Y} text="ARCPs" right="upcoming panel dates" />
       {ARCPS.map((a, i) => <ArcpCard key={a.date} i={i} a={a} />)}
     </div>
   );

@@ -167,7 +167,7 @@ function TrustScreen({ t }) {
   const pressNext = t >= 45.0 && t < 45.3;
   return (
     <div style={{ position: 'absolute', inset: 0 }}>
-      <Sidebar active="Hospital Trusts" />
+      <Sidebar active="Hospital trusts" />
       <TopBar title="Hospital Trusts" back right={
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div style={{ width: 34, height: 34, borderRadius: 8, border: '1.5px solid #C7D2DF', background: '#FBFCFE', display: 'flex', alignItems: 'center', justifyContent: 'center', color: C.navy, fontSize: 19, fontWeight: 700 }}>‹</div>

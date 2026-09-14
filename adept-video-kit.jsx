@@ -77,9 +77,9 @@ function kf(list, t, key, ease = Easing.easeInOutCubic) {
 }
 
 const NAV = [
-  ['grid', 'Dashboard'], ['tasks', 'Outstanding Tasks'], ['people', 'Trainees'],
-  ['building', 'Hospital Trusts'], ['clipboard', 'ARCPs'], ['calendar', 'Drop-in Sessions'],
-  ['chart', 'Summaries'], ['mail', 'Invitations'], ['help', 'Help & Support'],
+  ['grid', 'Dashboard'], ['people', 'Trainees'], ['building', 'Hospital trusts'],
+  ['tasks', 'Tasks'], ['clipboard', 'ARCPs'], ['calendar', 'Meetings'],
+  ['chart', 'Summaries'], ['mail', 'Invitations'], ['help', 'Help & support'],
 ];
 function Sidebar({ active }) {
   return (
@@ -97,7 +97,7 @@ function Sidebar({ active }) {
       })}
       <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'center', gap: 10, padding: '12px 10px 0', borderTop: `1px solid ${C.line}` }}>
         <div style={{ width: 34, height: 34, borderRadius: 17, background: C.tealFill, color: C.teal, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 13, fontWeight: 700 }}>EM</div>
-        <div><div style={{ fontSize: 13.5, fontWeight: 600, color: C.ink }}>Dr E. Marsh</div><div style={{ fontSize: 12, color: C.inkSoft }}>Programme Director</div></div>
+        <div><div style={{ fontSize: 13.5, fontWeight: 600, color: C.ink }}>Dr E. Marsh</div><div style={{ fontSize: 12, color: C.inkSoft }}>TPD</div></div>
       </div>
     </div>
   );

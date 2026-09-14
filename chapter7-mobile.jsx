@@ -86,7 +86,7 @@ function TutorPhone({ t }) {
           </div>
         ))}
         <div style={{ fontSize: 11.5, fontWeight: 700, color: C.inkSoft, textTransform: 'uppercase', letterSpacing: '.04em', margin: '14px 0 8px' }}>This trust</div>
-        {[['doc', 'Induction handbook', 'updated May 2026'], ['clipboard', 'Clinical guidelines', '14 documents'], ['tasks', 'Training modules', '3 due this month']].map(([ic, l, meta]) => (
+        {[['doc', 'Induction handbook', 'updated May 2026'], ['clipboard', 'Clinical guidelines', '14 documents'], ['tasks', 'Training modules', 'allocated per trainee']].map(([ic, l, meta]) => (
           <div key={l} style={{ display: 'flex', alignItems: 'center', gap: 12, background: '#fff', border: `1px solid ${C.line}`, borderRadius: 10, padding: '11px 12px', marginBottom: 8 }}>
             <div style={{ width: 34, height: 34, borderRadius: 8, background: C.soft, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Icon name={ic} size={16} color={C.navy} /></div>
             <div style={{ flex: 1 }}>

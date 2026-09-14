@@ -73,13 +73,13 @@ function GanttScreen({ t }) {
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, border: `1.5px solid ${exported ? C.teal : C.line}`, background: exported ? C.tealFill : '#fff', borderRadius: 8, padding: '9px 16px', fontSize: 13.5, fontWeight: 700, color: exported ? C.teal : C.navy, transform: pressExp ? 'scale(0.95)' : 'none' }}>
             {exported ? <Icon name="check" size={14} color={C.teal} sw={2.4} /> : <Icon name="download" size={14} color={C.navy} />}
-            {exported ? 'cohort-by-trust.xlsx' : 'Export (.xlsx)'}
+            {exported ? 'cohort-by-trust.xlsx' : 'Export spreadsheet (.xlsx)'}
           </div>
         </div>
       } />
       <div style={{ position: 'absolute', left: CIX - WIN.x, top: 90, display: 'flex', gap: 10, alignItems: 'center' }}>
         <div style={{ fontSize: 12.5, fontWeight: 700, color: C.inkSoft, textTransform: 'uppercase', letterSpacing: '.04em', marginRight: 6 }}>Filters</div>
-        {['All grades', 'ST only', 'Paused', 'LTFT'].map((f, i) => {
+        {['All grades', 'ST only', 'Paused', 'Unallocated'].map((f, i) => {
           const on = i === 1 && filterOn;
           return <div key={f} style={{ border: `1.5px solid ${on ? C.navy : C.line}`, background: on ? C.navy : '#fff', color: on ? '#fff' : C.inkSoft, borderRadius: 999, padding: '8px 18px', fontSize: 13.5, fontWeight: 700, transform: i === 1 && t >= 24.8 && t < 25.1 ? 'scale(0.93)' : 'none' }}>{f}</div>;
         })}
