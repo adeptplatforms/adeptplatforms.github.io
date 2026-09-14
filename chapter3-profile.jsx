@@ -134,14 +134,14 @@ function LtftCard({ t }) {
   return (
     <div style={{ position: 'absolute', left: CIX - WIN.x, top: 532, width: w, height: 240, background: '#fff', border: `1px solid ${C.line}`, borderRadius: 8, padding: '20px 24px' }}>
       <div style={{ fontFamily: FONT_T, fontWeight: 700, fontSize: 18, color: C.ink }}>LTFT &amp; CCT</div>
-      <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 3 }}>working percentage · banked full-time-equivalent model</div>
+      <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 3 }}>working pattern · whole working months</div>
       <div style={{ display: 'flex', gap: 12, marginTop: 16 }}>
         <div style={chipS(!sel80)}>100%</div>
         <div style={chipS(sel80, press)}>80%</div>
         <div style={chipS(false)}>60%</div>
       </div>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, marginTop: 20, borderTop: `1px solid ${C.line}`, paddingTop: 16 }}>
-        <span style={{ fontSize: 13, fontWeight: 600, color: C.inkSoft, textTransform: 'uppercase', letterSpacing: '.03em' }}>Adjusted CCT</span>
+        <span style={{ fontSize: 13, fontWeight: 600, color: C.inkSoft, textTransform: 'uppercase', letterSpacing: '.03em' }}>CCT</span>
         <Flip from={cct.from} to={cct.to} p={cct.p} style={{ fontFamily: FONT_T, fontWeight: 800, fontSize: 26, color: C.navy }} />
       </div>
     </div>

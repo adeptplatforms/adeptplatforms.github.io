@@ -10,7 +10,7 @@ const CAPTIONS = [
   [14.2, 20.6, 'Every account is invited — direct sign-ups are rejected.'],
   [22.6, 29.0, 'Two-factor authentication, enforced for programme staff.'],
   [31.0, 37.6, 'And every change is audited — who, what, when.'],
-  [39.6, 45.4, 'Role-scoped access; UK-region hosting; delete protection.'],
+  [39.6, 45.4, 'Role-scoped access; EU hosting under UK adequacy; point-in-time recovery.'],
   [47.0, 52.0, 'Built for NHS governance from day one.'],
 ];
 const CAM = [
@@ -113,7 +113,7 @@ function SecurityScreen({ t }) {
         })}
       </div>
       <div style={{ position: 'absolute', left: CIX - WIN.x, top: 782, width: CIW, display: 'flex', gap: 16 }}>
-        {[['people', 'Role-scoped access', 'each role sees only what it needs'], ['shield', 'Delete protection', 'primary records cannot be hard-deleted'], ['building', 'UK-region hosting', 'London · europe-west2'], ['check', 'WCAG AA', 'contrast + 44px tap targets']].map(([ic, l, d]) => (
+        {[['people', 'Role-scoped access', 'each role sees only what it needs'], ['shield', 'Point-in-time recovery', '7 days of restore, plus weekly backups'], ['building', 'EU hosting, UK adequacy', 'Firestore eur3 · functions in London'], ['check', 'WCAG AA', 'contrast + 44px tap targets']].map(([ic, l, d]) => (
           <div key={l} style={{ flex: 1, background: '#fff', border: `1px solid ${C.line}`, borderRadius: 8, padding: '14px 18px', display: 'flex', gap: 12, alignItems: 'center' }}>
             <div style={{ width: 36, height: 36, borderRadius: 8, background: C.soft, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}><Icon name={ic} size={17} color={C.navy} /></div>
             <div>

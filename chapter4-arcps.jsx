@@ -11,7 +11,7 @@ const CAPTIONS = [
   [20.6, 26.2, 'Assign the panel in two clicks.'],
   [28.4, 34.2, 'Record the outcome — including 7.x sub-outcomes.'],
   [36.6, 43.0, 'Outcome saved → the next ARCP date sets itself.'],
-  [45.0, 51.4, 'Summary document and panel email, generated for you.'],
+  [45.0, 51.4, 'Summary document and panel invites, generated for you.'],
   [53.4, 58.8, 'ARCPs end to end — no spreadsheet, no chasing.'],
 ];
 const CAM = [
@@ -139,7 +139,7 @@ function ArcpScreen({ t }) {
           <div style={{ flex: 1, border: `1px solid ${C.line}`, borderRadius: 8, padding: '16px 18px', display: 'flex', gap: 14, alignItems: 'flex-start', background: ph >= 4 ? '#fff' : C.soft }}>
             <div style={{ width: 44, height: 44, borderRadius: 8, background: C.blueFill, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Icon name="doc" size={20} color={C.blue} /></div>
             <div>
-              <div style={{ fontFamily: FONT_T, fontWeight: 700, fontSize: 15.5, color: C.ink }}>ARCP summary — J. Bekele.pdf</div>
+              <div style={{ fontFamily: FONT_T, fontWeight: 700, fontSize: 15.5, color: C.ink }}>ARCP summary — J. Bekele.docx</div>
               <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 4, lineHeight: 1.5 }}>Outcome 1 · panel, placements and dates included</div>
               {ph >= 4 && <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 8, fontSize: 12.5, fontWeight: 700, color: C.navy }}><Icon name="download" size={13} color={C.navy} />Download</div>}
             </div>
@@ -147,8 +147,8 @@ function ArcpScreen({ t }) {
           <div style={{ flex: 1, border: `1px solid ${C.line}`, borderRadius: 8, padding: '16px 18px', display: 'flex', gap: 14, alignItems: 'flex-start', background: ph >= 4 ? '#fff' : C.soft }}>
             <div style={{ width: 44, height: 44, borderRadius: 8, background: C.tealFill, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Icon name="mail" size={20} color={C.teal} /></div>
             <div>
-              <div style={{ fontFamily: FONT_T, fontWeight: 700, fontSize: 15.5, color: C.ink }}>Panel email — pre-addressed</div>
-              <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 4, lineHeight: 1.5 }}>To: Dr A. Whitby, Dr S. Rahman · summary attached</div>
+              <div style={{ fontFamily: FONT_T, fontWeight: 700, fontSize: 15.5, color: C.ink }}>Panel calendar invites</div>
+              <div style={{ fontSize: 12.5, color: C.inkSoft, marginTop: 4, lineHeight: 1.5 }}>To: Dr A. Whitby, Dr S. Rahman · .ics for the panel date</div>
               {ph >= 4 && <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 8, fontSize: 12.5, fontWeight: 700, color: C.navy }}>Open draft</div>}
             </div>
           </div>
