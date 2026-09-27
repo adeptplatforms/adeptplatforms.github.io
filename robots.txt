@@ -1,0 +1,7 @@
+# www.adept-platforms.com — the public marketing site.
+# Everything here is public; the platform itself (manage.adept-platforms.com)
+# is behind a sign-in and is not linked for crawling.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.adept-platforms.com/sitemap.xml
