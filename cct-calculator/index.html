@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="../assets/site.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "CCT date calculator for LTFT and time out", "description": "Free CCT date calculator for UK specialty training. Work out a completion date with less-than-full-time working and time out, counted as the RCoA, RCEM and RCPCH calculators count. Nothing leaves your browser.", "url": "https://www.adept-platforms.com/cct-calculator/", "inLanguage": "en-GB", "publisher": {"@type": "Organization", "name": "Adept Training Platforms Ltd", "url": "https://www.adept-platforms.com/", "logo": "https://www.adept-platforms.com/assets/icon-512.png", "founder": {"@type": "Person", "name": "Omar Jundi", "sameAs": ["https://www.linkedin.com/in/omar-jundi-475263273"]}}, "isPartOf": {"@type": "WebSite", "name": "adept", "url": "https://www.adept-platforms.com/"}, "applicationCategory": "EducationalApplication", "operatingSystem": "Any (web browser)", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "adept", "item": "https://www.adept-platforms.com/"}, {"@type": "ListItem", "position": 2, "name": "Free tools", "item": "https://www.adept-platforms.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "CCT date calculator for LTFT and time out", "item": "https://www.adept-platforms.com/cct-calculator/"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does annual leave count as training?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Annual and study leave are part of training time. Annual leave that builds up during maternity or parental leave also counts in the RCoA's calculator."}}, {"@type": "Question", "name": "Why is my date a Tuesday?", "acceptedAnswer": {"@type": "Answer", "text": "In the RCoA method, a date within six days of the changeover moves to the Tuesday before the first Wednesday of February or August, so training ends the day before the next rotation starts."}}, {"@type": "Question", "name": "Can I share the result?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. \"Copy a link to this\" puts the dates and pattern in the link itself, after the # sign, which browsers never send to a server. Anyone with the link sees the same calculation."}}, {"@type": "Question", "name": "Is this the official calculator?", "acceptedAnswer": {"@type": "Answer", "text": "No. It reproduces the counting in the colleges' published spreadsheets, and the answer is an estimate. Your Training Programme Director and deanery confirm your date."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does annual leave count as training?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Annual and study leave are part of training time. Annual leave that builds up during maternity or parental leave also counts in the RCoA's calculator."}}, {"@type": "Question", "name": "Why is my date a Tuesday?", "acceptedAnswer": {"@type": "Answer", "text": "In the RCoA method, a date within six days of the changeover moves to the Tuesday before the first Wednesday of February or August, so training ends the day before the next rotation starts."}}, {"@type": "Question", "name": "How do I see what a change would do?", "acceptedAnswer": {"@type": "Answer", "text": "Under the result, open \"What if…\" and choose when the change would start, the new working pattern and how long it lasts. The new date is shown beside your plan's, with the difference. \"Use this as my plan\" adds the change to your rows."}}, {"@type": "Question", "name": "Can I share the result?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. \"Copy a link to this\" puts the dates and pattern in the link itself, after the # sign, which browsers never send to a server. Anyone with the link sees the same calculation."}}, {"@type": "Question", "name": "Is this the official calculator?", "acceptedAnswer": {"@type": "Answer", "text": "No. It reproduces the counting in the colleges' published spreadsheets, and the answer is an estimate. Your Training Programme Director and deanery confirm your date."}}]}</script>
 <script src="../assets/cct.js" defer></script>
 <script src="../assets/cct-ui.js" defer></script>
 </head>
@@ -48,7 +48,7 @@
     <p class="crumbs"><a href="/tools/">Free tools</a> / CCT date calculator</p>
     <p class="eyebrow">Free tool · for trainees and programme directors</p>
     <h1>CCT date calculator</h1>
-    <p class="lede">Work out when training ends with less-than-full-time working and time out, counted the way your college's own calculator counts. It runs in your browser: nothing you type is sent anywhere.</p>
+    <p class="lede">Work out when training ends with less-than-full-time working and time out, counted the way your college's own calculator counts, and try a change before you ask for it. It runs in your browser: nothing you type is sent anywhere.</p>
   </div>
 
   <div class="calc">
@@ -87,6 +87,22 @@
 
     <section class="card card-pad result" aria-live="polite" aria-label="Result">
       <div id="result"><noscript><p>This calculator needs JavaScript. The method it uses is explained below.</p></noscript></div>
+      <div class="wi" id="wi" hidden>
+        <button type="button" class="wi-open" id="wi-open" aria-expanded="false" aria-controls="wi-body">
+          <span class="wi-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M4 7h11M4 17h7M15 4l3 3-3 3M11 14l3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="wi-text"><span class="wi-q">What if&hellip;</span><span class="wi-sub">See what going less than full time, taking time out or going back to full time would do to your date, before you ask.</span></span>
+          <svg class="wi-chev" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="wi-body" id="wi-body" hidden>
+          <div class="seg wi-presets" id="wi-presets" role="group" aria-label="Quick choices"></div>
+          <div class="wi-row">
+            <div class="field"><label class="label" for="wi-from">From</label><input id="wi-from" type="date"></div>
+            <div class="field"><label class="label" for="wi-wte">Working</label><select id="wi-wte"></select></div>
+            <div class="field"><label class="label" for="wi-for">For</label><select id="wi-for"></select></div>
+          </div>
+          <div id="wi-out" aria-live="polite"></div>
+        </div>
+      </div>
       <div class="r-actions">
         <button type="button" class="btn btn-outline btn-sm" id="copy">Copy a link to this</button>
         <button type="button" class="btn btn-outline btn-sm" id="print">Print</button>
@@ -121,6 +137,8 @@
       <p>Yes. Annual and study leave are part of training time. Annual leave that builds up during maternity or parental leave also counts in the RCoA's calculator.</p>
       <h3>Why is my date a Tuesday?</h3>
       <p>In the RCoA method, a date within six days of the changeover moves to the Tuesday before the first Wednesday of February or August, so training ends the day before the next rotation starts.</p>
+      <h3>How do I see what a change would do?</h3>
+      <p>Under the result, open "What if&hellip;" and choose when the change would start, the new working pattern and how long it lasts. The new date is shown beside your plan's, with the difference. "Use this as my plan" adds the change to your rows.</p>
       <h3>Can I share the result?</h3>
       <p>Yes. "Copy a link to this" puts the dates and pattern in the link itself, after the # sign, which browsers never send to a server. Anyone with the link sees the same calculation.</p>
       <h3>Is this the official calculator?</h3>

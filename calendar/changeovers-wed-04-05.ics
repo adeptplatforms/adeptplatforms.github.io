@@ -1,0 +1,1179 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//adept//Changeover dates//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Changeovers: Apr\, May (first Wednesday)
+X-WR-CALDESC:Rotation changeovers in April and May (first Wednesday) and th
+ e Code of Practice 12-\, 8- and 6-week notice deadlines. From adept: https
+ ://www.adept-platforms.com/changeover-dates/
+X-WR-TIMEZONE:Europe/London
+REFRESH-INTERVAL;VALUE=DURATION:P1W
+X-PUBLISHED-TTL:P1W
+BEGIN:VEVENT
+UID:20260401-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20260107
+DTEND;VALUE=DATE:20260108
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 1 Apr 2026. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260401-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20260204
+DTEND;VALUE=DATE:20260205
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 1
+  Apr 2026. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260401-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20260218
+DTEND;VALUE=DATE:20260219
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 1 Apr 2026. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260401-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20260331
+DTEND;VALUE=DATE:20260401
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 1 Apr 2026. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260401-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260402
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 1 Apr 2026. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260506-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20260211
+DTEND;VALUE=DATE:20260212
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 6 May 2026. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260506-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20260311
+DTEND;VALUE=DATE:20260312
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 6
+  May 2026. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260506-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20260325
+DTEND;VALUE=DATE:20260326
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 6 May 2026. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260506-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 6 May 2026. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260506-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20260506
+DTEND;VALUE=DATE:20260507
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 6 May 2026. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270407-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 7 Apr 2027. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270407-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 7
+  Apr 2027. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270407-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 7 Apr 2027. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270407-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20270406
+DTEND;VALUE=DATE:20270407
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 7 Apr 2027. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270407-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 7 Apr 2027. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270505-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 5 May 2027. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270505-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 5
+  May 2027. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270505-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 5 May 2027. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270505-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 5 May 2027. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270505-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 5 May 2027. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20280405-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20280112
+DTEND;VALUE=DATE:20280113
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 5 Apr 2028. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20280405-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20280209
+DTEND;VALUE=DATE:20280210
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 5
+  Apr 2028. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20280405-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20280223
+DTEND;VALUE=DATE:20280224
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 5 Apr 2028. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20280405-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20280404
+DTEND;VALUE=DATE:20280405
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 5 Apr 2028. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20280405-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20280405
+DTEND;VALUE=DATE:20280406
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 5 Apr 2028. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20280503-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20280209
+DTEND;VALUE=DATE:20280210
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 3 May 2028. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20280503-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20280308
+DTEND;VALUE=DATE:20280309
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 3
+  May 2028. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20280503-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20280322
+DTEND;VALUE=DATE:20280323
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 3 May 2028. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20280503-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20280502
+DTEND;VALUE=DATE:20280503
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 3 May 2028. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20280503-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20280503
+DTEND;VALUE=DATE:20280504
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 3 May 2028. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20290404-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20290110
+DTEND;VALUE=DATE:20290111
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 4 Apr 2029. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20290404-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20290207
+DTEND;VALUE=DATE:20290208
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 4
+  Apr 2029. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20290404-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20290221
+DTEND;VALUE=DATE:20290222
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 4 Apr 2029. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20290404-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20290403
+DTEND;VALUE=DATE:20290404
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 4 Apr 2029. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20290404-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20290404
+DTEND;VALUE=DATE:20290405
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 4 Apr 2029. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20290502-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20290207
+DTEND;VALUE=DATE:20290208
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 2 May 2029. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20290502-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20290307
+DTEND;VALUE=DATE:20290308
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 2
+  May 2029. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20290502-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20290321
+DTEND;VALUE=DATE:20290322
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 2 May 2029. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20290502-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20290501
+DTEND;VALUE=DATE:20290502
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 2 May 2029. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20290502-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20290502
+DTEND;VALUE=DATE:20290503
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 2 May 2029. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20300403-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20300109
+DTEND;VALUE=DATE:20300110
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 3 Apr 2030. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20300403-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20300206
+DTEND;VALUE=DATE:20300207
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 3
+  Apr 2030. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20300403-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20300220
+DTEND;VALUE=DATE:20300221
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 3 Apr 2030. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20300403-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20300402
+DTEND;VALUE=DATE:20300403
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 3 Apr 2030. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20300403-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20300403
+DTEND;VALUE=DATE:20300404
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 3 Apr 2030. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20300501-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20300206
+DTEND;VALUE=DATE:20300207
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 1 May 2030. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20300501-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20300306
+DTEND;VALUE=DATE:20300307
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 1
+  May 2030. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20300501-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20300320
+DTEND;VALUE=DATE:20300321
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 1 May 2030. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20300501-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20300430
+DTEND;VALUE=DATE:20300501
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 1 May 2030. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20300501-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20300501
+DTEND;VALUE=DATE:20300502
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 1 May 2030. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20310402-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20310108
+DTEND;VALUE=DATE:20310109
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 2 Apr 2031. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20310402-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20310205
+DTEND;VALUE=DATE:20310206
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 2
+  Apr 2031. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20310402-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20310219
+DTEND;VALUE=DATE:20310220
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 2 Apr 2031. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20310402-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20310401
+DTEND;VALUE=DATE:20310402
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 2 Apr 2031. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20310402-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20310402
+DTEND;VALUE=DATE:20310403
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 2 Apr 2031. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20310507-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20310212
+DTEND;VALUE=DATE:20310213
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 7 May 2031. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20310507-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20310312
+DTEND;VALUE=DATE:20310313
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 7
+  May 2031. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20310507-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20310326
+DTEND;VALUE=DATE:20310327
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 7 May 2031. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20310507-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20310506
+DTEND;VALUE=DATE:20310507
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 7 May 2031. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20310507-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20310507
+DTEND;VALUE=DATE:20310508
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 7 May 2031. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20320407-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20320114
+DTEND;VALUE=DATE:20320115
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 7 Apr 2032. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20320407-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20320211
+DTEND;VALUE=DATE:20320212
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 7
+  Apr 2032. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20320407-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20320225
+DTEND;VALUE=DATE:20320226
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 7 Apr 2032. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20320407-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20320406
+DTEND;VALUE=DATE:20320407
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 7 Apr 2032. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20320407-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20320407
+DTEND;VALUE=DATE:20320408
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 7 Apr 2032. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20320505-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20320211
+DTEND;VALUE=DATE:20320212
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 5 May 2032. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20320505-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20320310
+DTEND;VALUE=DATE:20320311
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 5
+  May 2032. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20320505-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20320324
+DTEND;VALUE=DATE:20320325
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 5 May 2032. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20320505-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20320504
+DTEND;VALUE=DATE:20320505
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 5 May 2032. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20320505-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20320505
+DTEND;VALUE=DATE:20320506
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 5 May 2032. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20330406-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20330112
+DTEND;VALUE=DATE:20330113
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 6 Apr 2033. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20330406-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20330209
+DTEND;VALUE=DATE:20330210
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 6
+  Apr 2033. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20330406-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20330223
+DTEND;VALUE=DATE:20330224
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 6 Apr 2033. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20330406-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20330405
+DTEND;VALUE=DATE:20330406
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 6 Apr 2033. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20330406-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20330406
+DTEND;VALUE=DATE:20330407
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 6 Apr 2033. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20330504-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20330209
+DTEND;VALUE=DATE:20330210
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 4 May 2033. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20330504-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20330309
+DTEND;VALUE=DATE:20330310
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 4
+  May 2033. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20330504-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20330323
+DTEND;VALUE=DATE:20330324
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 4 May 2033. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20330504-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20330503
+DTEND;VALUE=DATE:20330504
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 4 May 2033. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20330504-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20330504
+DTEND;VALUE=DATE:20330505
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 4 May 2033. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20340405-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20340111
+DTEND;VALUE=DATE:20340112
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 5 Apr 2034. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20340405-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20340208
+DTEND;VALUE=DATE:20340209
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 5
+  Apr 2034. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20340405-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20340222
+DTEND;VALUE=DATE:20340223
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 5 Apr 2034. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20340405-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20340404
+DTEND;VALUE=DATE:20340405
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 5 Apr 2034. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20340405-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20340405
+DTEND;VALUE=DATE:20340406
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 5 Apr 2034. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20340503-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20340208
+DTEND;VALUE=DATE:20340209
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 3 May 2034. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20340503-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20340308
+DTEND;VALUE=DATE:20340309
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 3
+  May 2034. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20340503-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20340322
+DTEND;VALUE=DATE:20340323
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 3 May 2034. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20340503-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20340502
+DTEND;VALUE=DATE:20340503
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 3 May 2034. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20340503-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20340503
+DTEND;VALUE=DATE:20340504
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 3 May 2034. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20350404-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20350110
+DTEND;VALUE=DATE:20350111
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 4 Apr 2035. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20350404-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20350207
+DTEND;VALUE=DATE:20350208
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 4
+  Apr 2035. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20350404-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20350221
+DTEND;VALUE=DATE:20350222
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 4 Apr 2035. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20350404-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20350403
+DTEND;VALUE=DATE:20350404
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 4 Apr 2035. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20350404-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20350404
+DTEND;VALUE=DATE:20350405
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 4 Apr 2035. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20350502-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20350207
+DTEND;VALUE=DATE:20350208
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 2 May 2035. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20350502-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20350307
+DTEND;VALUE=DATE:20350308
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 2
+  May 2035. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20350502-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20350321
+DTEND;VALUE=DATE:20350322
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 2 May 2035. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20350502-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20350501
+DTEND;VALUE=DATE:20350502
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 2 May 2035. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20350502-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20350502
+DTEND;VALUE=DATE:20350503
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 2 May 2035. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20360402-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20360109
+DTEND;VALUE=DATE:20360110
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 2 Apr 2036. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20360402-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20360206
+DTEND;VALUE=DATE:20360207
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 2
+  Apr 2036. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20360402-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20360220
+DTEND;VALUE=DATE:20360221
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 2 Apr 2036. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20360402-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20360401
+DTEND;VALUE=DATE:20360402
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 2 Apr 2036. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20360402-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20360402
+DTEND;VALUE=DATE:20360403
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 2 Apr 2036. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20360507-0@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20360213
+DTEND;VALUE=DATE:20360214
+SUMMARY:12 weeks to changeover: placement details due (Code of Practice)
+DESCRIPTION:The deanery tells the doctor and the employer about the placeme
+ nt: post and level\, employer\, site\, start date and length. Changeover W
+ ed 7 May 2036. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20360507-1@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20360312
+DTEND;VALUE=DATE:20360313
+SUMMARY:8 weeks to changeover: work schedule and post details due
+DESCRIPTION:The employer sends the post details (hours\, on-call pattern\, 
+ pay\, leave\, supervisors) and the generic work schedule. Changeover Wed 7
+  May 2036. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20360507-2@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20360326
+DTEND;VALUE=DATE:20360327
+SUMMARY:6 weeks to changeover: duty roster (rota slot) due
+DESCRIPTION:The employer sends the duty roster: the doctor’s actual rota 
+ slot. Changeover Wed 7 May 2036. https://www.adept-platforms.com/changeove
+ r-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20360507-3@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20360506
+DTEND;VALUE=DATE:20360507
+SUMMARY:Last day before changeover
+DESCRIPTION:Placements end today\; the new rotation starts tomorrow. Change
+ over Wed 7 May 2036. https://www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20360507-4@adept-platforms.com
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20360507
+DTEND;VALUE=DATE:20360508
+SUMMARY:Rotation changeover
+DESCRIPTION:New placements start today. Changeover Wed 7 May 2036. https://
+ www.adept-platforms.com/changeover-dates/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

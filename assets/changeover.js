@@ -57,6 +57,7 @@
   var urls = [];
   function render() {
     writeHash();
+    renderSub();
     var tbody = document.querySelector('#co-table tbody');
     var now = new Date(), today = utc(now.getFullYear(), now.getMonth() + 1, now.getDate());
     urls.forEach(function (u) { URL.revokeObjectURL(u); });
@@ -89,6 +90,40 @@
       tr.appendChild(td);
       tbody.appendChild(tr);
     });
+  }
+
+  // ---- Subscribe (2026-10-12) ------------------------------------------------
+  // One static calendar per pattern lives in /calendar/ (scripts/
+  // build_site_calendars.py in the adept repo): every single month and every
+  // pair, for both changeover rules.
+  var LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  function feedPath() {
+    var m = state.months.slice().sort(function (a, b) { return a - b; });
+    if (state.single || !m.length || m.length > 2) return null;
+    return 'www.adept-platforms.com/calendar/changeovers-' + state.rule + '-' +
+      m.map(function (x) { return (x < 10 ? '0' : '') + x; }).join('-') + '.ics';
+  }
+  function renderSub() {
+    var card = $('co-sub');
+    if (!card) return;
+    var path = feedPath(), m = state.months.slice().sort(function (a, b) { return a - b; });
+    card.hidden = !!state.single || !m.length;
+    if (card.hidden) return;
+    $('co-sub-btns').hidden = !path;
+    $('co-sub-lede').hidden = !path;
+    if (!path) {
+      $('co-sub-note').textContent = 'Subscribing covers one or two rotation months. For more, use "Add to calendar" on each changeover below.';
+      return;
+    }
+    var https = 'https://' + path, webcal = 'webcal://' + path;
+    var name = 'Changeovers (' + m.map(function (x) { return MONTHS[x - 1]; }).join(', ') + ')';
+    $('sub-google').href = 'https://calendar.google.com/calendar/r?cid=' + encodeURIComponent(webcal);
+    $('sub-outlook').href = 'https://outlook.office.com/calendar/0/addfromweb?url=' + encodeURIComponent(https) + '&name=' + encodeURIComponent(name);
+    $('sub-apple').href = webcal;
+    $('sub-copy').dataset.url = https;
+    $('co-sub-note').textContent = 'For ' + m.map(function (x) { return LONG[x - 1]; }).join(' and ') +
+      ', on the ' + (state.rule === 'first' ? '1st of the month' : 'first Wednesday') +
+      '. Apple Calendar also opens Outlook on a Windows PC; any other calendar can subscribe with the copied link.';
   }
 
   function buildMonths() {
@@ -133,6 +168,12 @@
     $('co-rule').addEventListener('change', function () { state.rule = $('co-rule').value; state.single = ''; $('co-single').value = ''; buildMonths(); render(); });
     $('co-single').addEventListener('change', function () { state.single = $('co-single').value; buildMonths(); render(); });
     $('co-controls').hidden = false;
+    $('sub-copy').addEventListener('click', function () {
+      var btn = $('sub-copy'), url = btn.dataset.url;
+      var done = function () { btn.textContent = 'Link copied'; setTimeout(function () { btn.textContent = 'Copy link'; }, 1800); };
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () { prompt('Copy this link', url); });
+      else prompt('Copy this link', url);
+    });
     buildMonths();
     render();
   }
