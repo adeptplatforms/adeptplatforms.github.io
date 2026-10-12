@@ -2,14 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.adept-platforms.com/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-12</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.adept-platforms.com/videos.html</loc>
     <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.adept-platforms.com/cct-calculator/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.adept-platforms.com/changeover-dates/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.adept-platforms.com/guides/arcp-outcomes/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.adept-platforms.com/guides/code-of-practice-notice/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.adept-platforms.com/guides/ltft-and-cct-dates/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.adept-platforms.com/guides/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.adept-platforms.com/tools/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
