@@ -53,12 +53,11 @@
 
   <div class="calc">
     <form class="card card-pad" onsubmit="return false" aria-label="Your training">
-      <h2 class="step"><b>1</b>Specialty</h2>
+      <h2 class="step"><b>1</b>Specialty<button type="button" class="info-btn" data-info="info-how" aria-haspopup="dialog" aria-label="How this method counts"><svg width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 9v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="10" cy="6.2" r="1.1" fill="currentColor"/></svg></button></h2>
       <div class="field">
         <label class="label" for="method">Count the way this calculator does</label>
         <select id="method"></select>
       </div>
-      <p class="method-note" id="method-note"></p>
 
       <div class="field">
         <span class="label" id="stage-label">Training to count</span>
@@ -74,12 +73,10 @@
       <div class="field">
         <label class="label" for="start">Date this stage started (or will start)</label>
         <input id="start" type="date">
-        <span class="hint">For anaesthetics, the RCoA confirms a CCT date counted from the start of ST4.</span>
       </div>
 
       <div class="divider"></div>
-      <h2 class="step"><b>3</b>Working pattern and time out</h2>
-      <p class="hint" style="margin:-8px 0 14px">Add a change each time the percentage changed, or training stopped or restarted. Time out that does not count includes maternity, paternity and shared parental leave and out-of-programme experience or career breaks; check your college's rules for sick leave and OOPT/OOPR.</p>
+      <h2 class="step"><b>3</b>Working pattern and time out<button type="button" class="info-btn" data-info="info-pattern" aria-haspopup="dialog" aria-label="What to enter here"><svg width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 9v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="10" cy="6.2" r="1.1" fill="currentColor"/></svg></button></h2>
       <div id="rows"></div>
       <button type="button" class="linkbtn" id="add"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Add a change</button>
       <p class="privacy-line"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 018 0v3" fill="none" stroke="currentColor" stroke-width="2"/></svg>Calculated on your device. Nothing is stored or sent.</p>
@@ -90,7 +87,7 @@
       <div class="wi" id="wi" hidden>
         <button type="button" class="wi-open" id="wi-open" aria-expanded="false" aria-controls="wi-body">
           <span class="wi-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M4 7h11M4 17h7M15 4l3 3-3 3M11 14l3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          <span class="wi-text"><span class="wi-q">What if&hellip;</span><span class="wi-sub">See what going less than full time, taking time out or going back to full time would do to your date, before you ask.</span></span>
+          <span class="wi-text"><span class="wi-q">What if&hellip;</span><span class="wi-sub">Try a different pattern or time out beside your plan.</span></span>
           <svg class="wi-chev" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="wi-body" id="wi-body" hidden>
@@ -110,6 +107,16 @@
       </div>
     </section>
   </div>
+
+  <dialog class="info" id="info-how" aria-labelledby="info-how-t">
+    <div class="info-head"><h2 id="info-how-t">How this method counts</h2><button type="button" class="info-x" data-close aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button></div>
+    <p class="info-body" id="method-note"></p>
+  </dialog>
+  <dialog class="info" id="info-pattern" aria-labelledby="info-pattern-t">
+    <div class="info-head"><h2 id="info-pattern-t">Working pattern and time out</h2><button type="button" class="info-x" data-close aria-label="Close"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button></div>
+    <p class="info-body">Add a change each time the percentage changed, or training stopped or restarted.</p>
+    <p class="info-body">Time out that does not count includes maternity, paternity and shared parental leave, and out-of-programme experience or career breaks. Check your college's rules for sick leave and OOPT/OOPR.</p>
+  </dialog>
 
   <div class="note amber after-calc" style="max-width:none">
     <strong>An estimate, not a confirmed date.</strong> Your deanery confirms a CCT date, usually at ARCP, and decides how sickness, statutory leave and time out count. Under the <a href="https://www.copmed.org.uk/publications/gold-guide/gold-guide-11th-edition" rel="noopener">Gold Guide</a>, 14 or more days of absence in a year (not counting study or annual leave) triggers a review of the date at ARCP. This tool is independent of the colleges named; it reproduces the counting in their published spreadsheets.

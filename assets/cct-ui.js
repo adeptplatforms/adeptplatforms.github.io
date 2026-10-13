@@ -457,6 +457,16 @@
       else prompt('Copy this link', location.href);
     });
     $('print').addEventListener('click', function () { window.print(); });
+    Array.prototype.forEach.call(document.querySelectorAll('.info-btn'), function (b) {
+      var d = $(b.getAttribute('data-info'));
+      b.addEventListener('click', function () { if (d.showModal) d.showModal(); else d.setAttribute('open', ''); });
+      d.querySelector('[data-close]').addEventListener('click', function () { d.close ? d.close() : d.removeAttribute('open'); });
+      // A tap on the dimmed page outside the box closes it (the box's own padding is the dialog too).
+      d.addEventListener('click', function (e) {
+        var r = d.getBoundingClientRect();
+        if (e.target === d && (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom)) d.close();
+      });
+    });
     update();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
