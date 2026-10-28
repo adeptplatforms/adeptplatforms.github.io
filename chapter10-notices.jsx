@@ -303,7 +303,7 @@ function Menu({ t }) {
 function NoticesScreen({ t }) {
   return (
     <div style={{ position: 'absolute', inset: 0, background: '#fff' }}>
-      <Sidebar />
+      <Sidebar active="Reports" />
       <TopBar title="Reports" right={<PeriodSwitcher label="Feb 2027" />} />
       <Header t={t} />
       <Strip t={t} />

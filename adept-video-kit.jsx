@@ -117,9 +117,9 @@ function kf(list, t, key, ease = Easing.easeInOutCubic) {
 
 // ── Chrome ───────────────────────────────────────────────────────────────────
 const NAV = [
-  ['grid', 'Dashboard'], ['people', 'Trainees'], ['building', 'Hospital trusts'],
+  ['grid', 'Dashboard'], ['people', 'Trainees'], ['building', 'Trusts'],
   ['tasks', 'Tasks'], ['clipboard', 'ARCPs'], ['door', 'Meetings'], ['cap', 'Teaching'],
-  ['chart', 'Summaries'], ['mail', 'Invitations'], ['help', 'Help & support'],
+  ['chart', 'Summaries'], ['doc', 'Reports'], ['mail', 'Invitations'], ['help', 'Help & support'],
 ];
 // The app's sidebar: pale panel, the page you are on in a navy tint with
 // semibold text, the appearance control and who is signed in at the foot.

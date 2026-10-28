@@ -30,7 +30,7 @@ const CAPTIONS = [
   [14.2, 20.6, 'Every account is invited — direct sign-ups are rejected.'],
   [22.6, 29.0, 'Two-factor authentication on every account.'],
   [31.0, 37.6, 'And every change is audited — who, what, when.'],
-  [39.6, 45.4, 'Role-scoped access, EU hosting, point-in-time recovery.'],
+  [39.6, 45.4, 'Role-scoped access, UK and EU hosting, point-in-time recovery.'],
   [47.0, 52.0, 'Built for NHS governance from day one.'],
 ];
 const CAM = [
@@ -72,7 +72,7 @@ const AUDIT = [
 const SAFEGUARDS = [
   ['people', 'Role-scoped access', 'Each role sees only what it needs'],
   ['shield', 'Point-in-time recovery', '7 days of restore, plus weekly backups'],
-  ['building', 'EU hosting, UK adequacy', 'Firestore eur3 · functions in London'],
+  ['building', 'UK and EU hosting', 'Database in the EU · files and functions in London'],
   ['check', 'WCAG AA', 'Contrast and 44 px tap targets'],
 ];
 const CODE = [3, 9, 4, 7, 1, 8];

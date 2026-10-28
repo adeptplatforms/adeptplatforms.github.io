@@ -185,7 +185,7 @@ function TrustScreen({ t }) {
   const col = trustColour(TRUST);
   return (
     <div style={{ position: 'absolute', inset: 0, background: '#fff' }}>
-      <Sidebar active="Hospital trusts" />
+      <Sidebar active="Trusts" />
       <div style={{ position: 'absolute', left: 0, top: TB_H, right: 0, bottom: 0, overflow: 'hidden' }}>
         <div style={{ position: 'absolute', left: 0, top: -TB_H, right: 0, height: 1200 }}>
           {/* Trust banner, tinted in the trust's own colour */}
