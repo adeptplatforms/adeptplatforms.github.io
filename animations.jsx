@@ -362,6 +362,9 @@ function useInlineFontsInto(svgRef) {
     const svg = svgRef.current;
     const host = svg && svg.querySelector('foreignObject > div');
     if (!svg || !host) return;
+    // Only when exporting (?export): on the public site this fetched every
+    // font subset (~1 MB, Greek and Cyrillic included) on each visit.
+    if (!/[?&]export\b/.test(location.search)) return;
     let cancelled = false;
     (async () => {
       const rules = [];
