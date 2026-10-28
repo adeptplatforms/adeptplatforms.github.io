@@ -19,16 +19,15 @@ const at = (x, y, extra) => ({ position: 'absolute', left: x, top: y, ...extra }
 const ease = (t, a, d = 0.45) => Easing.easeOutCubic(clamp((t - a) / d, 0, 1));
 const pulseAt = (t, s, e) => (t < s || t > e ? 0 : Math.sin(clamp((t - s) / (e - s), 0, 1) * Math.PI));
 
-// The dates: full time to Tue 6 Aug 2030; 80% from Wed 3 Feb 2027 counts the
-// 1,281 days left as ROUNDUP(1281 / 0.8) = 1,602, so training ends Mon 23 Jun
-// 2031 (not within 6 days of a changeover, so it stays there).
-const CCT_BEFORE = '6 Aug 2030', CCT_AFTER = '23 Jun 2031', FROM = '3 Feb 2027';
+// The dates: full time to Tue 6 Aug 2030; 80% from Wed 3 Feb 2027 ends Fri
+// 20 Jun 2031 by the app's engine (computeGradeDates, the RCoA count).
+const CCT_BEFORE = '6 Aug 2030', CCT_AFTER = '20 Jun 2031', FROM = '3 Feb 2027';
 const TRAINEE = 'Tom Ashworth';
 
 const CAPTIONS = [
   [6.6, 12.2, 'Trainees ask in the app, not by email.'],
-  [13.0, 19.0, 'The new CCT date shows before they send.'],
-  [20.2, 25.8, 'A stage update or a meeting is a tap too.'],
+  [12.8, 16.4, 'The new CCT date shows before they send.'],
+  [18.2, 25.8, 'A stage update or a meeting is a tap too.'],
   [27.8, 33.0, 'Every request lands in one place: Waiting on you.'],
   [34.2, 41.6, 'Approve it, and the CCT date updates itself.'],
   [45.4, 51.6, 'And the trainee is told. Nothing to chase.'],
@@ -38,7 +37,7 @@ const CAPTIONS = [
 const PHONE_OUT = 26.4, DESK_IN = 26.8, DESK_OUT = 43.6, PHONE_IN = 44.2;
 // Phone taps.
 const T_REQ = 8.4, T_80 = 10.0, T_FROM = 11.2, T_SEND = 14.4;
-const T_STAGE = 18.0, T_STAGE_SEND = 19.8;
+const T_STAGE = 18.4, T_STAGE_SEND = 20.0;
 const T_MEET = 22.0, T_MEET_SEND = 24.6;
 // Desktop clicks.
 const T_ROW = 31.0, T_APPROVE = 35.4;
@@ -55,8 +54,8 @@ const CHIP_Y = LT + 70, FROM_Y = LT + 204, PREV_Y = LT + 262, SEND_Y = LT + 366;
 const EX = 540;                            // exams and milestones
 const MT = 720;                            // meetings
 const SCROLL = [
-  { t: 0, s: 0 }, { t: 15.6, s: 0 }, { t: 16.6, s: 380 },
-  { t: 20.6, s: 380 }, { t: 21.4, s: 560 }, { t: 60, s: 560 },
+  { t: 0, s: 0 }, { t: 16.8, s: 0 }, { t: 17.6, s: 380 },
+  { t: 20.8, s: 380 }, { t: 21.6, s: 560 }, { t: 60, s: 560 },
 ];
 const scrollAt = (t) => kf(SCROLL, t, 's');
 // A content point on film, at the scroll of time t.
@@ -227,7 +226,7 @@ function InboxScreen({ t }) {
     <>
       <div style={at(SP, 18, { display: 'flex', alignItems: 'baseline', width: IW })}>
         <span style={{ fontSize: 17, fontWeight: 600, color: C.ink }}>Notifications</span>
-        <span style={{ marginLeft: 'auto', fontSize: 14, color: C.navy, fontWeight: 500 }}>Mark all read</span>
+        <span style={{ marginLeft: 'auto', fontSize: 14, color: C.navy, fontWeight: 500 }}>Mark all as read</span>
       </div>
       <div style={at(SP, 50, { width: IW, height: 1, background: C.line })} />
       {row(51, 'Your working-pattern request has been approved', 'Your new working pattern is on your profile, with your updated end of training.', 'Just now · Working pattern', true, n1)}
@@ -305,7 +304,7 @@ function Waiting({ t }) {
   );
 }
 function RequestSheet({ t }) {
-  const o = ease(t, T_ROW + 0.25, 0.55);
+  const o = ease(t, T_ROW + 1.2, 0.5);  // once the camera has pulled back (32.2)
   if (o <= 0.01) return null;
   const done = t >= T_APPROVE + 0.2;
   const dp = ease(t, T_APPROVE + 0.2, 0.4);
@@ -319,7 +318,7 @@ function RequestSheet({ t }) {
           <Avatar name={TRAINEE} size={40} i={2} />
           <div style={{ lineHeight: 1.3 }}>
             <div style={{ fontSize: 16, fontWeight: 600, color: C.ink }}>{TRAINEE}</div>
-            <div style={{ fontSize: 14, color: C.inkSoft }}>ST5 · asked today</div>
+            <div style={{ fontSize: 14, color: C.inkSoft }}>ST5 · asked 28 Oct 2026</div>
           </div>
           <div style={{ marginLeft: 'auto' }}>{done ? <Pill text="Approved" tone="success" style={{ opacity: dp }} /> : <Pill text="Waiting" tone="warning" />}</div>
         </div>
@@ -369,14 +368,15 @@ const CAM = [
   { t: 0.0, x: 960, y: 540, z: 1 },
   { t: 6.2, x: 960, y: 540, z: 1 },
   { t: 7.6, x: PHONE_C.x, y: 470, z: 1.35 },
-  { t: 15.4, x: PHONE_C.x, y: 476, z: 1.35 },
-  { t: 16.6, x: PHONE_C.x, y: 520, z: 1.3 },
+  { t: 16.6, x: PHONE_C.x, y: 476, z: 1.35 },
+  { t: 17.6, x: PHONE_C.x, y: 520, z: 1.3 },
   { t: 25.8, x: PHONE_C.x, y: 526, z: 1.3 },
   { t: 27.2, x: 960, y: 540, z: 1 },
   { t: 28.0, x: 960, y: 540, z: 1 },
   { t: 29.0, x: WIN.x + CX + LW / 2, y: WIN.y + 300, z: 1.45 },
   { t: 31.4, x: WIN.x + CX + LW / 2 + 4, y: WIN.y + 304, z: 1.45 },
-  { t: 32.6, x: WIN.x + SHEET_X + SHEET_W / 2 - 40, y: WIN.y + 290, z: 1.35 },
+  { t: 32.2, x: 960, y: 540, z: 1 },
+  { t: 33.2, x: WIN.x + SHEET_X + SHEET_W / 2 - 40, y: WIN.y + 290, z: 1.35 },
   { t: 41.8, x: WIN.x + SHEET_X + SHEET_W / 2 - 36, y: WIN.y + 294, z: 1.35 },
   { t: 43.4, x: 960, y: 540, z: 1 },
   { t: 44.4, x: 960, y: 540, z: 1 },

@@ -67,18 +67,19 @@ const TODOS = [
   ['cap', '2 trainees have no modules chosen for this placement', 'warning'],
   ['calendar', 'Work schedules for Feb 2027: due by 9 Dec 2026 (8 weeks before the changeover, a trust duty); issue date not recorded', 'warning'],
 ];
+// Rows as the app's _personList draws them: grade · email.
 const ARRIVING = [
-  ['Jonah Bekele', 'ST5 · from Caldermere General · 3 Feb 2027'],
-  ['Priya Raman', 'CT2 · from Skelton Bridge · 3 Feb 2027'],
-  ['Tomasz Nowicki', 'ST4 · from Harewood Vale · 3 Feb 2027'],
-  ['Grace Adeyemi', 'ST6 · from Wharfemoor Park · 3 Feb 2027'],
-  ['Leo Hartmann', 'CT1 · new to the programme · 3 Feb 2027'],
+  ['Jonah Bekele', 'ST5 · j.bekele@nhs.example'],
+  ['Priya Raman', 'CT2 · p.raman@nhs.example'],
+  ['Tomasz Nowicki', 'ST4 · t.nowicki@nhs.example'],
+  ['Grace Adeyemi', 'ST6 · g.adeyemi@nhs.example'],
+  ['Leo Hartmann', 'CT1 · l.hartmann@nhs.example'],
 ];
 const LEAVING = [
-  ['Amara Okafor', 'Leaving for Caldermere General, 3 Feb 2027'],
-  ['Felix Ward', 'Leaving for Netherfield & District, 3 Feb 2027'],
-  ['Maya Choudhury', 'Leaving for Ousegate Teaching, 3 Feb 2027'],
-  ['Ruth Ellison', 'Completes training, 2 Feb 2027'],
+  ['Amara Okafor', 'ST7 · a.okafor@nhs.example'],
+  ['Felix Ward', 'CT3 · f.ward@nhs.example'],
+  ['Maya Choudhury', 'ST5 · m.choudhury@nhs.example'],
+  ['Ruth Ellison', 'ST4 · r.ellison@nhs.example'],
 ];
 const MODULES = [
   'General anaesthesia', 'Obstetrics CCC', 'Paediatrics CCC', 'Pain', 'Perioperative medicine',
@@ -195,19 +196,20 @@ function PersonList({ t, rows, from }) {
     </div>
   );
 }
+const RC_W = 900;                         // the list's width
 function RotationChanges({ t }) {
   return (
     <>
       <div style={at(CX, TOP, { fontSize: 15, color: C.inkSoft })}>Arriving and leaving in {NEXT}.</div>
-      <div style={at(CX, TOP + 40, { width: COL })}>
+      {/* One column, Arriving above Leaving, as the app lays it out. */}
+      <div style={at(CX, TOP + 40, { width: RC_W })}>
         <SectionTitle text={`Arriving (${ARRIVING.length})`} right={<span style={btnOutline(false, { height: 40 })}><Icon name="mail" size={16} color={C.navy} />Email arrivals</span>} />
-        <div style={{ height: 12 }} />
-        <PersonList t={t} rows={ARRIVING} from={15.4} />
-      </div>
-      <div style={at(RX, TOP + 40, { width: COL })}>
+        <div style={{ height: 8 }} />
+        <PersonList t={t} rows={ARRIVING} from={14.8} />
+        <div style={{ height: 24 }} />
         <SectionTitle text={`Leaving (${LEAVING.length})`} right={<span style={btnOutline(false, { height: 40 })}><Icon name="mail" size={16} color={C.navy} />Email leavers</span>} />
-        <div style={{ height: 12 }} />
-        <PersonList t={t} rows={LEAVING} from={16.2} />
+        <div style={{ height: 8 }} />
+        <PersonList t={t} rows={LEAVING} from={14.8} />
       </div>
     </>
   );
@@ -410,13 +412,13 @@ const CURSOR = [
 const CAM = [
   { t: 0.0, x: 960, y: 540, z: 1 },
   { t: 6.2, x: 960, y: 540, z: 1 },
-  { t: 8.0, x: 900, y: 455, z: 1.2 },
-  { t: 14.6, x: 900, y: 460, z: 1.2 },
-  { t: 15.6, x: 960, y: 420, z: 1.12 },
-  { t: 22.6, x: 960, y: 430, z: 1.12 },
+  { t: 8.0, x: 960, y: 470, z: 1.1 },
+  { t: 14.6, x: 960, y: 470, z: 1.1 },
+  { t: 15.6, x: 960, y: 520, z: 1.06 },
+  { t: 22.6, x: 960, y: 520, z: 1.06 },
   { t: 24.6, x: 960, y: 540, z: 1 },
-  { t: 26.0, x: 760, y: 470, z: 1.16 },
-  { t: 30.0, x: 760, y: 470, z: 1.16 },
+  { t: 26.0, x: 960, y: 520, z: 1.06 },
+  { t: 30.0, x: 960, y: 520, z: 1.06 },
   { t: 31.2, x: 1430, y: 420, z: 1.3 },
   { t: 34.6, x: 1430, y: 420, z: 1.3 },
   { t: 36.4, x: 960, y: 540, z: 1 },

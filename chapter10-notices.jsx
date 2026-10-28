@@ -9,17 +9,16 @@
 const { Stage, useTime, Easing, clamp } = window;
 const {
   C, WIN, SB_W, PAD, Icon, Sidebar, TopBar, FilmRoot, Camera, AppWindow, Cursor, Captions,
-  TitleCard, EndCard, Pill, SectionTitle, TrustName, PeriodSwitcher, Flip, card, btnPrimary, btnOutline,
+  TitleCard, EndCard, SectionTitle, TrustName, PeriodSwitcher, Flip, card, btnPrimary, btnOutline,
 } = window.AdeptKit;
 
 // ── Layout (window coordinates; film = window + WIN.x / WIN.y) ──────────────
 const CX = SB_W + PAD;                    // content left (272)
 const CW = WIN.w - SB_W - 2 * PAD;        // content width (1404)
 const TITLE_Y = 84, INTRO_Y = 120;
-const LINE_Y = 190;
-const DUE = { x: CX, y: 306, w: 780, h: 330 };
+const DUE = { x: CX, y: 176, w: 780, h: 330 };
 const RIGHT_X = CX + 812, RIGHT_W = CW - 812;
-const TR_TITLE = 652, TR_HEAD = 680, TR_Y = 716, TR_ROW = 42;
+const TR_TITLE = 538, TR_HEAD = 566, TR_Y = 602, TR_ROW = 44;
 const EXPORT = { x: CX + CW - 230 - 12 - 124, y: 70, w: 124, h: 44 };
 const PDF = { x: CX + CW - 230, y: 70, w: 230, h: 44 };
 // The pack row's buttons inside the Due now card (window coordinates).
@@ -47,12 +46,11 @@ const CAPTIONS = [
 const CAM = [
   { t: 0.0, x: 960, y: 540, z: 1 },
   { t: 6.2, x: 960, y: 540, z: 1 },
-  { t: 7.6, x: 937, y: 555, z: 1.1 },
-  { t: 25.4, x: 939, y: 555, z: 1.1 },
-  { t: 26.6, x: 772, y: 538, z: 1.45 },
-  { t: 39.8, x: 776, y: 540, z: 1.45 },
-  { t: 40.9, x: 960, y: 598, z: 1.06 },
-  { t: 46.6, x: 960, y: 600, z: 1.06 },
+  { t: 25.6, x: 960, y: 540, z: 1 },
+  { t: 26.8, x: 772, y: 436, z: 1.45 },
+  { t: 39.8, x: 776, y: 438, z: 1.45 },
+  { t: 40.9, x: 960, y: 540, z: 1 },
+  { t: 46.6, x: 960, y: 540, z: 1 },
   { t: 47.6, x: 1072, y: 479, z: 1.3 },
   { t: 53.2, x: 1074, y: 479, z: 1.3 },
   { t: 54.2, x: 960, y: 540, z: 1.03 },
@@ -84,7 +82,7 @@ const RECORDED = 38.4;   // the pack is recorded (dialog confirmed)
 // ── Data (fictional) ─────────────────────────────────────────────────────────
 // Today is Wed 11 Nov 2026: exactly 12 weeks before the 3 Feb 2027 changeover.
 const MARKS = [
-  { k: '12 weeks', d: 'Wed 11 Nov 2026', who: 'Trainee told, trust given the details', duty: 'Deanery', on: [13.0, 19.4], today: true },
+  { k: '12 weeks', d: 'Wed 11 Nov 2026', who: 'Trainee told, trust given the details', duty: 'Deanery', on: [13.0, 19.4] },
   { k: '8 weeks', d: 'Wed 9 Dec 2026', who: 'Work schedule and pay', duty: 'Trust duty', on: [19.8, 25.6] },
   { k: '6 weeks', d: 'Wed 23 Dec 2026', who: 'Rota', duty: 'Trust duty', on: [19.8, 25.6] },
   { k: 'Changeover', d: 'Wed 3 Feb 2027', who: 'Doctors start', duty: 'Feb 2027 rotation' },
@@ -134,38 +132,47 @@ function Header({ t }) {
       <div style={at(EXPORT.x, EXPORT.y, btnOutline(press(t, T_EXPORT), { width: EXPORT.w }))}><Icon name="download" size={17} color={C.navy} />Export</div>
       <div style={at(PDF.x, PDF.y, btnOutline(false, { width: PDF.w }))}>Export summary (PDF)</div>
       <div style={at(CX, INTRO_Y, { width: CW - 400, fontSize: 14.5, color: C.inkSoft, lineHeight: 1.45 })}>
-        Were trainees and trusts told 12 weeks before the Feb 2027 changeover (3 Feb 2027)? "No record" means no date in adept, not late.
+        Were trainees and trusts told 12 weeks before the Feb 2027 changeover (3 Feb 2027)? "No record" means no date in Adept, not late.
       </div>
     </>
   );
 }
 
-// ── The changeover and its deadlines ─────────────────────────────────────────
-function Strip({ t }) {
-  const x0 = CX + 150, x1 = CX + CW - 150;
+// ── The deadlines, as a diagram (not an app screen) ─────────────────────────
+// Shown over the dimmed window while the captions explain the three
+// deadlines; the app itself has no such strip.
+const DG = { x: 210, y: 270, w: 1500, h: 400 };
+function Deadlines({ t }) {
+  const o = ease(t, 6.6, 0.6) * (1 - ease(t, 25.6, 0.5));
+  if (o <= 0.01) return null;
+  const x0 = 190, x1 = DG.w - 190, lineY = 196;
   const step = (x1 - x0) / (MARKS.length - 1);
-  const drawn = ease(t, 6.8, 1.6);
+  const drawn = ease(t, 7.2, 1.6);
   return (
     <>
-      <div style={at(x0, LINE_Y, { width: (x1 - x0) * drawn, height: 2, background: C.line })} />
-      {MARKS.map((m, i) => {
-        const x = x0 + i * step;
-        const show = ease(t, 7.0 + i * 0.35, 0.5);
-        const hot = m.on && t >= m.on[0] && t < m.on[1] ? ease(t, m.on[0], 0.4) * (1 - ease(t, m.on[1] - 0.3, 0.3)) : 0;
-        const end = i === MARKS.length - 1;
-        const dot = end ? C.navy : hot > 0.01 ? C.warning : C.navy;
-        return (
-          <div key={m.k} style={{ opacity: show }}>
-            {m.today && <div style={at(x - 30, LINE_Y - 34, { width: 60, textAlign: 'center' })}><Pill text="Today" tone="blue" size={13} /></div>}
-            <div style={at(x - 8 - 3 * hot, LINE_Y - 7 - 3 * hot, { width: 16 + 6 * hot, height: 16 + 6 * hot, borderRadius: 999, background: end ? C.navy : '#fff', border: `3px solid ${dot}` })} />
-            <div style={at(x - 150, LINE_Y + 20, { width: 300, textAlign: 'center', lineHeight: 1.35, padding: '6px 8px', borderRadius: 8, background: hot > 0.01 ? `rgba(154,91,19,${0.1 * hot})` : 'transparent' })}>
-              <div style={{ fontSize: 15, fontWeight: 600, color: C.ink }}>{m.k} · {m.d}</div>
-              <div style={{ fontSize: 14.5, color: C.ink }}>{m.who}</div>
-              <div style={{ fontSize: 14, color: C.inkSoft }}>{m.duty}</div>
+      <div style={at(0, 0, { width: 1920, height: 1080, background: `rgba(15,28,46,${0.45 * o})`, zIndex: 50 })} />
+      <div style={at(DG.x, DG.y, card({ width: DG.w, height: DG.h, zIndex: 55, opacity: o, transform: `translateY(${(1 - o) * 12}px)`, boxShadow: '0 24px 70px rgba(19,39,63,.28)' }))}>
+        <div style={at(40, 34, { fontSize: 26, fontWeight: 600, color: C.ink })}>The Code of Practice deadlines</div>
+        <div style={at(40, 74, { fontSize: 17, color: C.inkSoft })}>Counted back from the changeover. Example: the Feb 2027 rotation, starting Wed 3 Feb 2027.</div>
+        <div style={at(x0, lineY, { width: (x1 - x0) * drawn, height: 2, background: C.line })} />
+        {MARKS.map((m, i) => {
+          const x = x0 + i * step;
+          const show = ease(t, 7.4 + i * 0.35, 0.5);
+          const hot = m.on && t >= m.on[0] && t < m.on[1] ? ease(t, m.on[0], 0.4) * (1 - ease(t, m.on[1] - 0.3, 0.3)) : 0;
+          const end = i === MARKS.length - 1;
+          const dot = end ? C.navy : hot > 0.01 ? C.warning : C.navy;
+          return (
+            <div key={m.k} style={{ opacity: show }}>
+              <div style={at(x - 9 - 3 * hot, lineY - 8 - 3 * hot, { width: 18 + 6 * hot, height: 18 + 6 * hot, borderRadius: 999, background: end ? C.navy : '#fff', border: `3px solid ${dot}` })} />
+              <div style={at(x - 165, lineY + 26, { width: 330, textAlign: 'center', lineHeight: 1.4, padding: '8px 10px', borderRadius: 8, background: hot > 0.01 ? `rgba(154,91,19,${0.1 * hot})` : 'transparent' })}>
+                <div style={{ fontSize: 18, fontWeight: 600, color: C.ink }}>{m.k} · {m.d}</div>
+                <div style={{ fontSize: 17, color: C.ink }}>{m.who}</div>
+                <div style={{ fontSize: 16, color: C.inkSoft }}>{m.duty}</div>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </>
   );
 }
@@ -218,7 +225,7 @@ function Figures({ t }) {
       {fig(<Flip from="4 of 5" to="5 of 5" p={flip} />, 'trusts told 12+ weeks ahead', RIGHT_X + 300)}
       <div style={at(RIGHT_X, DUE.y + 92, { fontSize: 15, fontWeight: 600, color: C.ink })}>Trainees told, Feb 2027</div>
       {BARS.map(([l, n, col], i) => {
-        const g = ease(t, 7.6 + i * 0.15, 0.8);
+        const g = ease(t, 5.8 + i * 0.15, 0.8);
         return (
           <div key={l} style={at(RIGHT_X, DUE.y + 128 + i * 38, { width: RIGHT_W, height: 28, display: 'flex', alignItems: 'center' })}>
             <span style={{ width: 110, fontSize: 14.5, color: C.ink }}>{l}</span>
@@ -306,7 +313,6 @@ function NoticesScreen({ t }) {
       <Sidebar active="Reports" />
       <TopBar title="Reports" right={<PeriodSwitcher label="Feb 2027" />} />
       <Header t={t} />
-      <Strip t={t} />
       <DueNow t={t} />
       <Figures t={t} />
       <TrustTable t={t} />
@@ -325,6 +331,7 @@ function Film({ showCaptions }) {
         <AppWindow><NoticesScreen t={t} /></AppWindow>
         <Cursor t={t} path={CURSOR} clicks={CLICKS} />
       </Camera>
+      <Deadlines t={t} />
       <Captions t={t} list={CAPTIONS} show={showCaptions} />
       <TitleCard t={t} heading="Code of Practice notices" kicker="Product tour · notice periods" />
       <EndCard t={t} inAt={54} />
