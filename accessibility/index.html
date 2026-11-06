@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility statement — adept</title>
+<meta name="description" content="Adept Training Platforms Ltd is committed to making its web application accessible, in line with the Web Content Accessibility Guidelines (WCAG) 2.2 level AA.">
+<link rel="canonical" href="https://www.adept-platforms.com/accessibility/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="adept">
+<meta property="og:title" content="Accessibility statement — adept">
+<meta property="og:description" content="Adept Training Platforms Ltd is committed to making its web application accessible, in line with the Web Content Accessibility Guidelines (WCAG) 2.2 level AA.">
+<meta property="og:url" content="https://www.adept-platforms.com/accessibility/">
+<meta property="og:image" content="https://www.adept-platforms.com/assets/share-card.png">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B1E3A">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="preload" href="/assets/fonts/InstrumentSans-Var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/base.css">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="adept home"><img src="/assets/icon.svg" alt="" width="28" height="28">adept</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="/#product">Product</a>
+      <a href="/#security">Security</a>
+      <a href="/tools/">Free tools</a>
+      <a href="/guides/">Guides</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <a class="signin" href="https://manage.adept-platforms.com">Sign in</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <div class="hero">
+    <h1>Accessibility statement</h1>
+    <p class="doc-meta">Last reviewed: 12 October 2026</p>
+  </div>
+  <div class="article">
+    <div class="prose">
+<p>Adept Training Platforms Ltd is committed to making its web application accessible, in line with the <strong>Web Content Accessibility Guidelines (WCAG) 2.2 level AA</strong>. This statement applies to the web application at <strong>manage.adept-platforms.com</strong>.</p>
+ <h2>How accessible this application is</h2>
+ <p>This application is <strong>partially conformant</strong> with WCAG 2.2 level AA: it meets most criteria, with the known exceptions listed below.</p>
+ <p>What currently works well:</p>
+ <ul><li><strong>Colour contrast</strong> of text meets the AA contrast ratio (4.5:1) in both the light and the dark theme, including the colours used for statuses. Form fields, selectors and filter chips have an outline that meets 3:1.</li>
+ <li><strong>Text resizing</strong> - the app reflows and remains usable when you zoom the browser to 200%, and browser zoom is never blocked.</li>
+ <li><strong>Keyboard operation</strong> - every form is operable with a keyboard, Tab moves through fields, selectors and actions in their logical order, and every button and icon control shows a clear focus ring.</li>
+ <li><strong>Names for controls</strong> - every icon-only control (navigation arrows, pagers, filter chips, tick-boxes, timeline toggles, selectors, date pickers) exposes a descriptive name to screen readers. Filter chips announce whether they are selected.</li>
+ <li><strong>Interactive target size</strong> - buttons, chips and icon controls on the screens a trainee uses on a phone give at least a 44 by 44 pixel target, as do icon buttons and the rotation pager everywhere. Some compact buttons on staff desktop screens are 32 pixels high, above the AA minimum of 24 by 24 pixels.</li>
+ <li><strong>Timelines</strong> - the cohort and placement timelines scroll with the arrow keys and are described to screen readers.</li>
+ <li><strong>Landmarks</strong> - every page has a navigation landmark (the sidebar) and a main landmark (the page content), so a screen reader can jump between them.</li>
+ <li><strong>Visible structure</strong> - headings, cards and form fields have clear visual labels, and error / confirmation messages are shown in text (not by colour alone).</li>
+ <li><strong>Personal data controls</strong> - you can download a copy of your data or request its deletion from your profile.</li></ul>
+ <h2>Known issues (we are working on these)</h2>
+ <ul><li><strong>Screen-reader evaluation</strong> - control names and descriptions pass automated checks but have not yet been evaluated by ear with NVDA and VoiceOver. This is under way in October 2026.</li>
+ <li><strong>Text spacing</strong> - text is drawn on a canvas, so a personal stylesheet that changes line, letter or word spacing has no effect. Browser zoom to 400% works and is the supported way to enlarge text.</li>
+ <li><strong>Complex grids</strong> - the rotation and cohort grids, placement timelines and progress matrices carry a spoken description for each bar and cell, but do not yet convey every role, state and value to screen readers. This is the next phase of our roadmap.</li>
+ <li><strong>PDF downloads are not tagged</strong> - the reports summary, the annual programme report and ARCP panel thank-you letters are untagged PDFs, so a screen reader may read them out of order. The report figures are also on screen in the application and download as a spreadsheet (.xlsx), and a thank-you letter can be asked for in another format using the contact details below.</li>
+ <li><strong>Teaching check-in</strong> - check-in by QR code always offers a typed six-character code instead, so no camera is needed.</li>
+ <li>The application has <strong>not yet been independently audited</strong> to full WCAG 2.2 AA.</li></ul>
+ <h2>What we're doing to improve accessibility</h2>
+ <ul><li>Between 3 and 11 September 2026 we ran nine automated audits (axe-core) across every page of the application, on both the staging copy and the live service, and fixed every control they identified: keyboard focus order, focus visibility, target sizes, page zoom, timeline keyboard access and the names of icon-only controls.</li>
+ <li>On 4 October 2026 we re-audited every page each role can reach (programme director, college tutor, trainee, administrator, and the sign-in page) and fixed what was found: unnamed selectors and tick boxes, the show-password button on the sign-in page, and form fields that lost their name once filled in. We also calculated the contrast of every text colour in both themes, darkened the status colours that fell short as text, and added navigation and main landmarks, which the framework has only recently made possible.</li>
+ <li>On 5 October 2026 we tested with the keyboard alone, with every dialog and panel open, and at 400% zoom. Navigation, lists and panels worked by keyboard as found. We fixed: the outline of form fields, selectors and chips; the cohort timeline, which is now reached before its name column and shows a focus ring; the show-password button, now in the Tab order; and the names of dialogs, date pickers and the controls inside the allocation panel. No page cuts off text at 400% zoom.</li>
+ <li>On 10 October 2026 a full audit of the application's code led to these fixes: the timeline colours for training stages now meet 4.5:1 with their white labels; buttons that confirm a deletion or a warning keep a readable label in the dark theme; cards that stayed white in the dark theme now follow it; the smallest timeline labels are now 11 pixels, and on a phone the trainee's timeline also says in ordinary text where they are now and where they go next; four unnamed icon buttons were named; and error messages say what happened in plain words. Filter chips announce whether they are selected from the same date.</li>
+ <li>A formal three-phase WCAG 2.2 AA roadmap is in place: manual screen-reader and keyboard evaluation (NVDA and VoiceOver) in October 2026, semantic enrichment of the grids and timelines in November and December 2026, then an independent third-party audit in January 2027. <strong>Target completion: 31 January 2027.</strong></li>
+ <li>Automated accessibility checks are repeated on every significant release.</li></ul>
+ <h2>Feedback and contact</h2>
+ <p>If you find an accessibility barrier, or need information in a different format, contact <a href="mailto:support@adept-platforms.com">support@adept-platforms.com</a>. We aim to respond within 5 working days.</p>
+ <h2>Enforcement</h2>
+ <p>If you are not happy with how we respond, you can contact the Equality and Human Rights Commission (EHRC), which enforces the public-sector accessibility regulations.</p>
+ <h2>Preparation of this statement</h2>
+ <p>This statement was prepared on 30 June 2026 and last reviewed on 12 October 2026 following the September and October audits. It is based on a self-assessment of the application against WCAG 2.2 AA, supported by automated testing. It will be reviewed after the independent audit above, and at least annually.</p>
+    </div>
+    <aside class="side">
+      <div class="card">
+        <h4>Policies and plans</h4>
+        <ul>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/privacy/">Privacy notice</a></li>
+          <li><a href="/accessibility/" aria-current="page">Accessibility statement</a></li>
+          <li><a href="/terms/">Terms and acceptable use</a></li>
+          <li><a href="/business-continuity/">Business continuity plan</a></li>
+          <li><a href="/carbon-reduction/">Carbon reduction plan</a></li>
+          <li><a href="/incident-response/">Security incident response</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Questions</h4>
+        <p style="margin:0;font-size:15px">Write to <a href="mailto:support@adept-platforms.com">support@adept-platforms.com</a>.</p>
+      </div>
+    </aside>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="wrap grid">
+    <div class="about">
+      <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="24" height="24">adept</a>
+      <p>Rotations, placements, ARCPs and reporting for NHS postgraduate medical training. Invite-only.</p>
+    </div>
+    <nav aria-label="Product">
+      <b>Product</b>
+      <a href="/#product">Features</a>
+      <a href="/#security">Security</a>
+      <a href="/videos.html">Videos</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/tools/">Free tools</a>
+      <a href="/guides/">Guides</a>
+      <a href="https://www.linkedin.com/in/omar-jundi-475263273">Founder on LinkedIn</a>
+    </nav>
+    <nav aria-label="Legal">
+      <b>Legal</b>
+      <a href="/privacy/">Privacy notice</a>
+      <a href="/accessibility/">Accessibility statement</a>
+      <a href="/terms/">Terms and acceptable use</a>
+      <a href="/business-continuity/">Business continuity plan</a>
+      <a href="/carbon-reduction/">Carbon reduction plan</a>
+      <a href="/incident-response/">Security incident response</a>
+    </nav>
+    <a class="ce" href="https://registry.blockmarktech.com/certificates/cfd5f536-7937-4918-b116-7f67700d8b3e/?share_key=WxYNx8cnw9Szfhapj4p8n1DGxE-FGnPcc2ch81dsObM"><img src="/cyber-essentials-certified.png" alt="Cyber Essentials certified"></a>
+    <div class="legal"><span>&copy; 2026 Adept Training Platforms Ltd, company no. 17275687.</span><span>Not a clinical system. Manages training data only.</span></div>
+  </div>
+</footer>
+<script src="/assets/nav.js"></script>
+</body>
+</html>
