@@ -1,15 +1,64 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Governed by design — Adept walkthrough</title>
+<meta name="theme-color" content="#0B1E3A">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="preload" href="/assets/fonts/InstrumentSans-Var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/base.css">
+<style>
+/* player page: site header, walkthrough bar, then the player fills the rest */
+html,body{height:100%;overflow:hidden;background:var(--ink)}
+.top{background:var(--ground)}
+.vbar{background:var(--ground);border-bottom:1px solid var(--rule);font-size:15px}
+.vbar .wrap{display:flex;align-items:center;gap:24px;height:48px}
+.vbar a{color:var(--navy);font-weight:500;white-space:nowrap}
+.vbar a:hover{color:var(--ink)}
+.vbar h1{flex:1;min-width:0;font-size:15px;font-weight:600;color:var(--ink);letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vbar h1 .n{color:var(--muted);font-weight:500;font-variant-numeric:tabular-nums;margin-right:8px}
+.vbar .step{display:flex;gap:24px}
+@media (max-width:700px){.vbar .wrap{gap:16px}.vbar h1{display:none}.vbar .all{margin-right:auto}.vbar .long{display:none}}
+#dc-root .sc-host-x>div{background:var(--ink)!important}
+#dc-root svg{box-shadow:none!important}
+</style>
 <script src="./support.js"></script>
 </head>
 <body>
+<a class="skip" href="#player">Skip to the video</a>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="adept home"><img src="/assets/icon.svg" alt="" width="28" height="28">adept</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="/#product">Product</a>
+      <a href="/#security">Security</a>
+      <a href="/tools/">Free tools</a>
+      <a href="/guides/">Guides</a>
+      <a href="/videos.html" aria-current="page">Videos</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <a class="signin" href="https://manage.adept-platforms.com">Sign in</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
+<div class="vbar">
+  <div class="wrap">
+    <a class="all" href="/videos.html"><span aria-hidden="true">&larr; </span>All walkthroughs</a>
+    <h1><span class="n">8 of 11</span>Governed by design</h1>
+    <nav class="step" aria-label="Walkthroughs">
+      <a class="prev" href="/video-7-mobile.html"><span aria-hidden="true">&larr; </span>Previous</a>
+      <a class="next" href="/video-9-requests.html">Next<span class="long">: Requests, not emails</span><span aria-hidden="true"> &rarr;</span></a>
+    </nav>
+  </div>
+</div>
+<div id="player" tabindex="-1">
 <x-dc>
-<helmet data-dc-atomics><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet"><style>html,body{margin:0;height:100%;background:#0a0a0a}*{box-sizing:border-box}</style></helmet><x-import component-from-global-scope="AdeptSecurityVideo" from="./animations.js ./adept-video-kit.js ./chapter8-security.js" show-captions="{{ showCaptions }}" style="position:fixed;inset:0" hint-size="100%,100%"></x-import>
+<helmet data-dc-atomics><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet"></helmet><x-import component-from-global-scope="AdeptSecurityVideo" from="./animations.js ./adept-video-kit.js ./chapter8-security.js" show-captions="{{ showCaptions }}" style="position:fixed;top:122px;left:0;right:0;bottom:0" hint-size="100%,100%"></x-import>
 </x-dc>
+</div>
 <script type="text/x-dc" data-dc-script data-props="{&quot;showCaptions&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Video&quot;}}">
 class Component extends DCLogic {
   renderVals() {
@@ -17,5 +66,6 @@ class Component extends DCLogic {
   }
 }
 </script>
+<script src="/assets/nav.js"></script>
 </body>
 </html>

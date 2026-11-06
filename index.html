@@ -41,6 +41,9 @@
 .hero-side{grid-column:8/13;padding-left:24px;align-self:end;display:flex;flex-direction:column;gap:24px}
 .hero-side p{font-size:19px;line-height:1.5;color:var(--text);text-wrap:pretty}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.tour{display:inline-flex;align-items:center;gap:8px;height:52px;padding:0 4px;font-weight:500;font-size:16px;color:var(--navy);text-underline-offset:.28em}
+.tour:hover{color:var(--ink)}
+.tour svg{width:12px;height:12px;flex-shrink:0}
 @media (max-width:900px){.hero h1,.hero-side{grid-column:1/-1}.hero-side{margin-top:24px;padding-left:0}}
 
 /* board */
@@ -216,6 +219,7 @@ p,li{text-wrap:pretty}
       <a href="#security">Security</a>
       <a href="/tools/">Free tools</a>
       <a href="/guides/">Guides</a>
+      <a href="/videos.html">Videos</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="signin" href="https://manage.adept-platforms.com">Sign in</a>
@@ -232,6 +236,7 @@ p,li{text-wrap:pretty}
         <div class="ctas">
           <a class="btn btn-solid" href="#contact">Request access</a>
           <a class="btn btn-line" href="/cct-calculator/">Try the CCT calculator</a>
+          <a class="tour" href="/video-1-dashboard.html"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.6v8.8L10.4 6z" fill="currentColor"/></svg>Watch a short tour</a>
         </div>
       </div>
     </div>
