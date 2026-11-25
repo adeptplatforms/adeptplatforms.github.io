@@ -44,7 +44,7 @@
 <div class="wrap">
   <div class="hero">
     <h1>Privacy notice</h1>
-    <p class="doc-meta">Last updated: 5 November 2026</p>
+    <p class="doc-meta">Last updated: 25 November 2026</p>
   </div>
   <div class="article">
     <div class="prose">
@@ -58,7 +58,9 @@
  <li><strong>Professional identifiers:</strong> GMC number, National Training Number (NTN), grade, specialty.</li>
  <li><strong>Training records:</strong> rotations and placements, ARCP dates and outcomes, less-than-full-time (LTFT) status, training pauses (the fact, the dates and the category), CCT dates, and programme-director notes.</li>
  <li><strong>Account &amp; consent:</strong> sign-in email, a unique account ID, and your acceptance of these terms (version and date).</li>
+ <li><strong>Passkeys:</strong> if you choose to sign in with a passkey, we keep its public key (never anything that could sign in as you; the private part stays on your device), its ID, a name for the device it was made on (for example "Chrome on Windows" or "Adept app on Android"), when it was made and last used, and your account ID and email address. You can remove a passkey from My profile at any time. A passkey is deleted when your sign-in email changes, when your record is merged into another, and when your account is switched off or erased.</li>
  <li><strong>Usage / audit:</strong> a record of changes made in the system (who changed what, and when).</li>
+ <li><strong>Downloads:</strong> when a member of staff downloads a file from adept (a spreadsheet, PDF or Word document), we record who took it, their role and area, when, and the file's name, type and size. Never the file's contents.</li>
  <li><strong>Page-use counts:</strong> how many times each page is opened each day, by role (for example trainee or college tutor). These are counts only and never record who opened a page.</li>
  <li><strong>Images:</strong> a profile / avatar image, if uploaded; for programme directors, an image of their signature if they upload one for the letters they send.</li>
  <li><strong>ARCP panel review:</strong> before an ARCP, your programme director and the consultants on your ARCP panel note what they found in your evidence (for example your PDP, supervision, MSF, logbook, exams and the absence on your Form R), any concern and a plan. If you sit on an ARCP panel, we hold your name, email address and the ARCP dates you sit on.</li>
@@ -88,17 +90,18 @@
  <li>your recorded teaching attendance is low;</li>
  <li>an exam or milestone is overdue;</li>
  <li>your last ARCP outcome was not a standard one.</li></ul>
- <p>These are fixed rules, not a score or a prediction. They are not stored. Only programme directors see them; college tutors and panel members do not. <strong>No decision is made automatically:</strong> your ARCP panel makes its decisions in the usual way. If something on the list is wrong, update your checklist or meeting log, or tell your programme director.</p>
+ <p>These are fixed rules, not a score or a prediction. They are not stored. Only programme directors and programme coordinators see them; college tutors and panel members do not. <strong>No decision is made automatically:</strong> your ARCP panel makes its decisions in the usual way. If something on the list is wrong, update your checklist or meeting log, or tell your programme director.</p>
  <h2>5. Who we share it with</h2>
  <p>We do not sell your data. We use trusted providers to run the service:</p>
  <ul><li><strong>Google / Firebase</strong> - hosting, authentication, database and storage.</li>
  <li><strong>Resend</strong> - sending account and notification emails (including EDT and module-change emails).</li></ul>
  <p>Your deanery (NHS England (Workforce, Training and Education), Yorkshire and the Humber), as controller, sees your training data through the programme directors and college tutors it authorises. The consultants on your ARCP panel see the panel's review of your evidence for that ARCP only, and only until a week after it; they do not see the rest of your record, and your college tutor does not see the review. We do not share it with anyone else except the providers above, and with others only where required by law.</p>
+ <p>Your School may give a <strong>programme coordinator</strong> (an administrator who supports the programme directors) read-only access to what your programme directors see, apart from their private notes about you and the ARCP panel's review of your evidence. A coordinator cannot change anything, and any file they download is recorded.</p>
  <p>What your programme director may download from adept and send on:</p>
  <ul><li><strong>To the trust you are going to.</strong> Before you start a placement, your programme director may send the trust's medical staffing team an "arrivals" list. It gives your name, GMC number, grade, working pattern (percentage), placement dates, site, programme and email address, so the trust can set up your rota and work schedule. It never includes reasons for time out or for a change of working pattern, or any notes.</li>
  <li><strong>To NHS England's Trainee Information System (TIS).</strong> Your deanery may export your training details in TIS's format to keep TIS up to date.</li>
  <li><strong>In reports.</strong> Programme directors can produce reports and an annual programme report. Reports can name you and are for use inside your deanery only. The annual report never names anyone.</li></ul>
- <p>adept does not keep a copy of these downloads. Once downloaded, your deanery looks after them under its own records rules.</p>
+ <p>adept does not keep a copy of these downloads, only the record that a file was downloaded (see section 3). Once downloaded, your deanery looks after them under its own records rules.</p>
  <h2>6. Where your data is stored</h2>
  <ul><li><strong>Application database:</strong> the European Union (Google Cloud multi-region eur3; Belgium and the Netherlands).</li>
  <li><strong>Server functions:</strong> the United Kingdom (London).</li>
@@ -115,7 +118,7 @@
  <li>undecided or withdrawn working-pattern requests, and meeting requests: 12 months;</li>
  <li>EDT requests: 12 months after the request is decided or withdrawn, and sooner if your record is erased;</li>
  <li>security logs (sign-ins and system logs): 365 days.</li></ul>
- <p>Some things are deleted automatically: in-app messages after 180 days; calendar links after 12 months at most; ESSR reminder records a month after your ARCP; and password-reset requests within 24 hours.</p>
+ <p>Some things are deleted automatically: the daily record of which accounts used adept after 90 days (a two-year summary by account ID, with no name or email address, is kept for usage figures); the record of which app you last signed in from 13 months after your last sign-in; the record of files downloaded after 13 months; counts of sign-in attempts, kept to stop repeated guessing, after about a day (these hold a scrambled, one-way hashed form of your network address, never the address itself); in-app messages after 180 days; calendar links after 12 months at most; ESSR reminder records a month after your ARCP; and password-reset requests within 24 hours.</p>
  <p>A decided working-pattern request is part of your training record. If your record is erased, the request is kept without your name, email address or any notes, as the programme's record that a decision was made.</p>
  <h2>8. How we protect it</h2>
  <p>Data is encrypted in transit and at rest, access is controlled by sign-in and role-based permissions, accounts are invite-only, and changes are audit-logged. The database has delete-protection and point-in-time recovery enabled.</p>
